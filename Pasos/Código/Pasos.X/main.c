@@ -1,33 +1,20 @@
-/*
- * File:   main.c
- * Author: danie
- *
- * Created on 19 de marzo de 2020, 11:26 AM
- */
-
-
 #include <xc.h>
 #include <stdint.h>
-#include "Alteri.h"
+#include "Alteri.h"/* Libreria espcífica de tarjeta de desarrollo usada */
 #define period 100
 
-void Pasos(uint8_t val);
-void StepDelay(uint32_t val);
-void InterruptInit(void);
+void StepDelay(uint32_t val);/* Pseudo delay para tiempo entre señales a motor*/
+void InterruptInit(void); /* Inicializacion de interrupción */
 uint8_t value = 0;
 void main(void)
 {
-    OSCCON = 0x72;
+    OSCCON = 0x72;/* Reloj interno a 8MHz*/
     InterruptInit();
-    TRISDbits.RD0 = 0;
-    TRISDbits.RD1 = 0;
-    TRISDbits.RD2 = 0;
-    TRISDbits.RD3 = 0;
-    TRISAbits.RA3 = 0;
-    //TRISBbits.RB4 = 1;
+    TRISD = 0;
+    TRISA = 0;
     while(1)
     {
-        if(value){
+        if(value){/*Rotar el motor a pasos en el sentido del reloj a medio paso*/
                 LATD = 0x09;
                 StepDelay(period);
                 LATD = 0x08;
@@ -45,7 +32,7 @@ void main(void)
                 LATD = 0x01;
                 StepDelay(period);
         }
-		/* Rotate Stepper Motor Anticlockwise with Full step sequence */
+		/* Rotar el motor en contra del sentido del reloj a paso completo */
         else{
             LATD = 0x09;
             StepDelay(period);
@@ -75,10 +62,9 @@ void StepDelay(uint32_t val)
         }
 }
 
-__interrupt() void ISR(void)  //High priority interrupt ISR
-//void interrupt ServicioInterrupcion(void)
+__interrupt() void ISR(void)
 {
-  if(INTCONbits.INT0IF==1)  //polling for INT0 interrupt
+  if(INTCONbits.INT0IF==1)
   {
     if(value == 0){
         value = 1;
@@ -87,6 +73,6 @@ __interrupt() void ISR(void)  //High priority interrupt ISR
         value = 0;
     }
     LATAbits.LA3 = value;  
-    INTCONbits.INT0IF=0;  //clearing INT0 interrupt flag
+    INTCONbits.INT0IF=0;  //vaciar bandera de interrupción
   }
 }

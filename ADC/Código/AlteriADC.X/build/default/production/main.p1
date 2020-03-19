@@ -4,89 +4,41 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v __delay `JF3152 ~T0 @X0 0 e ]
 [p i __delay ]
 [p mainexit ]
-"17 main.c
-[; ;main.c: 17: void initLCD(void);
+"10 main.c
+[; ;main.c: 10: void initLCD(void);
 [v _initLCD `(v ~T0 @X0 0 ef ]
-"16
-[; ;main.c: 16: void initADC(void);
+"9
+[; ;main.c: 9: void initADC(void);
 [v _initADC `(v ~T0 @X0 0 ef ]
-"20
-[; ;main.c: 20: void initLED(void);
+"11
+[; ;main.c: 11: void initLED(void);
 [v _initLED `(v ~T0 @X0 0 ef ]
+"12
+[; ;main.c: 12: uint16_t conversionADC(void);
+[v _conversionADC `(us ~T0 @X0 0 ef ]
 "113 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"18 main.c
-[; ;main.c: 18: unsigned int conversionADC(void);
-[v _conversionADC `(ui ~T0 @X0 0 ef ]
-"19
-[; ;main.c: 19: void ChecarLEDs(unsigned int res);
-[v _ChecarLEDs `(v ~T0 @X0 0 ef1`ui ]
 "123 ../AlteriADC.X/xlcd.h
 [; ;../AlteriADC.X/xlcd.h: 123: void WriteCmdXLCD( unsigned char);
 [v _WriteCmdXLCD `(v ~T0 @X0 0 ef1`uc ]
 "138
 [; ;../AlteriADC.X/xlcd.h: 138: void putsXLCD( char *);
 [v _putsXLCD `(v ~T0 @X0 0 ef1`*uc ]
-"3438 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3438:     struct {
-[s S142 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S142 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 ]
-"3447
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3447:     struct {
-[s S143 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S143 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
-"3437
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3437: typedef union {
-[u S141 `S142 1 `S143 1 ]
-[n S141 . . . ]
-"3457
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3457: extern volatile TRISAbits_t TRISAbits __attribute__((address(0xF92)));
-[v _TRISAbits `VS141 ~T0 @X0 0 e@3986 ]
-"3636
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3636:     struct {
-[s S148 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S148 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"3646
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3646:     struct {
-[s S149 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S149 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"3635
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3635: typedef union {
-[u S147 `S148 1 `S149 1 ]
-[n S147 . . . ]
-"3657
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3657: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
-[v _TRISBbits `VS147 ~T0 @X0 0 e@3987 ]
-"2979
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2979:     struct {
-[s S127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S127 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
-"2988
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2988:     struct {
-[s S128 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S128 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 ]
-"2978
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2978: typedef union {
-[u S126 `S127 1 `S128 1 ]
-[n S126 . . . ]
-"2998
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2998: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
-[v _LATAbits `VS126 ~T0 @X0 0 e@3977 ]
-"3079
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3079:     struct {
-[s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S130 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"3089
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3089:     struct {
-[s S131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S131 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
-"3078
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3078: typedef union {
-[u S129 `S130 1 `S131 1 ]
-[n S129 . . . ]
-"3100
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3100: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
-[v _LATBbits `VS129 ~T0 @X0 0 e@3978 ]
+"13 main.c
+[; ;main.c: 13: void ChecarLEDs(uint16_t res);
+[v _ChecarLEDs `(v ~T0 @X0 0 ef1`us ]
+"3427 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3427: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"3625
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3625: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
+[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
+"2973
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2973: extern volatile unsigned char LATA __attribute__((address(0xF89)));
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
+"3073
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3073: extern volatile unsigned char LATB __attribute__((address(0xF8A)));
+[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
 "6666
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6666: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
@@ -147,6 +99,36 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6792
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6792: extern volatile unsigned char ADRESL __attribute__((address(0xFC3)));
 [v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
+"2979
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2979:     struct {
+[s S127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S127 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 ]
+"2988
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2988:     struct {
+[s S128 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S128 . LA0 LA1 LA2 LA3 LA4 LA5 LA6 ]
+"2978
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2978: typedef union {
+[u S126 `S127 1 `S128 1 ]
+[n S126 . . . ]
+"2998
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2998: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
+[v _LATAbits `VS126 ~T0 @X0 0 e@3977 ]
+"3079
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3079:     struct {
+[s S130 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S130 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"3089
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3089:     struct {
+[s S131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S131 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"3078
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3078: typedef union {
+[u S129 `S130 1 `S131 1 ]
+[n S129 . . . ]
+"3100
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3100: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
+[v _LATBbits `VS129 ~T0 @X0 0 e@3978 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -704,276 +686,232 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;../AlteriADC.X/Alteri.h: 162:     }
 [e :UE 367 ]
 }
-"13 main.c
-[; ;main.c: 13: char strResultado[5];
+"6 main.c
+[; ;main.c: 6: char strResultado[5];
 [v _strResultado `uc ~T0 @X0 -> 5 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"22
-[; ;main.c: 22: void main(void){
+"15
+[; ;main.c: 15: void main(void){
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"23
-[; ;main.c: 23:     initLCD();
+"16
+[; ;main.c: 16:     initLCD();
 [e ( _initLCD ..  ]
-"24
-[; ;main.c: 24:     initADC();
+"17
+[; ;main.c: 17:     initADC();
 [e ( _initADC ..  ]
-"25
-[; ;main.c: 25:     initLED();
+"18
+[; ;main.c: 18:     initLED();
 [e ( _initLED ..  ]
-"26
-[; ;main.c: 26:     while(1){
+"19
+[; ;main.c: 19:     while(1){
 [e :U 375 ]
 {
-"28
-[; ;main.c: 28:         sprintf(strResultado,"%04u",conversionADC());
-[e ( _sprintf (1 , (. , &U _strResultado :s 1C ( _conversionADC ..  ]
-"29
-[; ;main.c: 29:         ChecarLEDs(conversionADC());
-[e ( _ChecarLEDs (1 ( _conversionADC ..  ]
-"30
-[; ;main.c: 30:         WriteCmdXLCD(0b11000000 + 5);
+"20
+[; ;main.c: 20:         uint16_t resultado = conversionADC();
+[v _resultado `us ~T0 @X0 1 a ]
+[e = _resultado ( _conversionADC ..  ]
+"21
+[; ;main.c: 21:         sprintf(strResultado,"%04u",resultado);
+[e ( _sprintf (1 , (. , &U _strResultado :s 1C -> _resultado `ui ]
+"22
+[; ;main.c: 22:         WriteCmdXLCD(0b11000000 + 5);
 [e ( _WriteCmdXLCD (1 -> + -> 192 `i -> 5 `i `uc ]
-"31
-[; ;main.c: 31:         putsXLCD(strResultado);
+"23
+[; ;main.c: 23:         putsXLCD(strResultado);
 [e ( _putsXLCD (1 &U _strResultado ]
-"32
-[; ;main.c: 32:         delay_ms(200);
+"24
+[; ;main.c: 24:         ChecarLEDs(resultado);
+[e ( _ChecarLEDs (1 _resultado ]
+"25
+[; ;main.c: 25:         delay_ms(200);
 [e ( _delay_ms (1 -> -> 200 `i `l ]
-"33
-[; ;main.c: 33:     }
+"26
+[; ;main.c: 26:     }
 }
 [e :U 374 ]
 [e $U 375  ]
 [e :U 376 ]
-"34
-[; ;main.c: 34: }
+"27
+[; ;main.c: 27: }
 [e :UE 373 ]
 }
-"36
-[; ;main.c: 36: void initLED(void){
+"29
+[; ;main.c: 29: void initLED(void){
 [v _initLED `(v ~T0 @X0 1 ef ]
 {
 [e :U _initLED ]
 [f ]
-"37
-[; ;main.c: 37:     TRISAbits.RA1 = 0;
-[e = . . _TRISAbits 1 1 -> -> 0 `i `uc ]
-"38
-[; ;main.c: 38:     TRISAbits.RA2 = 0;
-[e = . . _TRISAbits 1 2 -> -> 0 `i `uc ]
-"39
-[; ;main.c: 39:     TRISAbits.RA3 = 0;
-[e = . . _TRISAbits 1 3 -> -> 0 `i `uc ]
-"40
-[; ;main.c: 40:     TRISAbits.RA4 = 0;
-[e = . . _TRISAbits 1 4 -> -> 0 `i `uc ]
-"41
-[; ;main.c: 41:     TRISAbits.RA5 = 0;
-[e = . . _TRISAbits 1 5 -> -> 0 `i `uc ]
-"42
-[; ;main.c: 42:     TRISBbits.RB0 = 0;
-[e = . . _TRISBbits 1 0 -> -> 0 `i `uc ]
-"43
-[; ;main.c: 43:     TRISBbits.RB1 = 0;
-[e = . . _TRISBbits 1 1 -> -> 0 `i `uc ]
-"44
-[; ;main.c: 44:     TRISBbits.RB2 = 0;
-[e = . . _TRISBbits 1 2 -> -> 0 `i `uc ]
-"45
-[; ;main.c: 45:     TRISBbits.RB3 = 0;
-[e = . . _TRISBbits 1 3 -> -> 0 `i `uc ]
-"46
-[; ;main.c: 46:     TRISBbits.RB4 = 0;
-[e = . . _TRISBbits 1 4 -> -> 0 `i `uc ]
-"48
-[; ;main.c: 48:     LATAbits.LA1 = 0;
-[e = . . _LATAbits 1 1 -> -> 0 `i `uc ]
-"49
-[; ;main.c: 49:     LATAbits.LA2 = 0;
-[e = . . _LATAbits 1 2 -> -> 0 `i `uc ]
-"50
-[; ;main.c: 50:     LATAbits.LA3 = 0;
-[e = . . _LATAbits 1 3 -> -> 0 `i `uc ]
-"51
-[; ;main.c: 51:     LATAbits.LA4 = 0;
-[e = . . _LATAbits 1 4 -> -> 0 `i `uc ]
-"52
-[; ;main.c: 52:     LATAbits.LA5 = 0;
-[e = . . _LATAbits 1 5 -> -> 0 `i `uc ]
-"53
-[; ;main.c: 53:     LATBbits.LB0 = 0;
-[e = . . _LATBbits 1 0 -> -> 0 `i `uc ]
-"54
-[; ;main.c: 54:     LATBbits.LB1 = 0;
-[e = . . _LATBbits 1 1 -> -> 0 `i `uc ]
-"55
-[; ;main.c: 55:     LATBbits.LB2 = 0;
-[e = . . _LATBbits 1 2 -> -> 0 `i `uc ]
-"56
-[; ;main.c: 56:     LATBbits.LB3 = 0;
-[e = . . _LATBbits 1 3 -> -> 0 `i `uc ]
-"57
-[; ;main.c: 57:     LATBbits.LB4 = 0;
-[e = . . _LATBbits 1 4 -> -> 0 `i `uc ]
-"58
-[; ;main.c: 58: }
+"30
+[; ;main.c: 30:     TRISA = 0;
+[e = _TRISA -> -> 0 `i `uc ]
+"31
+[; ;main.c: 31:     TRISB = 0;
+[e = _TRISB -> -> 0 `i `uc ]
+"32
+[; ;main.c: 32:     LATA = 0;
+[e = _LATA -> -> 0 `i `uc ]
+"33
+[; ;main.c: 33:     LATB = 0;
+[e = _LATB -> -> 0 `i `uc ]
+"34
+[; ;main.c: 34: }
 [e :UE 377 ]
 }
-"59
-[; ;main.c: 59: void initADC(void){
+"35
+[; ;main.c: 35: void initADC(void){
 [v _initADC `(v ~T0 @X0 1 ef ]
 {
 [e :U _initADC ]
 [f ]
-"60
-[; ;main.c: 60:     ADCON0 = 0b00000001;
+"36
+[; ;main.c: 36:     ADCON0 = 0b00000001;
 [e = _ADCON0 -> -> 1 `i `uc ]
-"62
-[; ;main.c: 62:     ADCON1 = 0b00001110;
+"38
+[; ;main.c: 38:     ADCON1 = 0b00001110;
 [e = _ADCON1 -> -> 14 `i `uc ]
-"64
-[; ;main.c: 64:     ADCON2 = 0b10111100;
+"40
+[; ;main.c: 40:     ADCON2 = 0b10111100;
 [e = _ADCON2 -> -> 188 `i `uc ]
-"65
-[; ;main.c: 65: }
+"41
+[; ;main.c: 41: }
 [e :UE 378 ]
 }
-"66
-[; ;main.c: 66: void initLCD(void){
+"42
+[; ;main.c: 42: void initLCD(void){
 [v _initLCD `(v ~T0 @X0 1 ef ]
 {
 [e :U _initLCD ]
 [f ]
-"67
-[; ;main.c: 67:     OpenXLCD(0b00101100 & 0b00111000);
+"43
+[; ;main.c: 43:     OpenXLCD(0b00101100 & 0b00111000);
 [e ( _OpenXLCD (1 -> & -> 44 `i -> 56 `i `uc ]
-"68
-[; ;main.c: 68:     WriteCmdXLCD(0b00000110);
+"44
+[; ;main.c: 44:     WriteCmdXLCD(0b00000110);
 [e ( _WriteCmdXLCD (1 -> -> 6 `i `uc ]
-"69
-[; ;main.c: 69:     WriteCmdXLCD(0b00001111);
+"45
+[; ;main.c: 45:     WriteCmdXLCD(0b00001111);
 [e ( _WriteCmdXLCD (1 -> -> 15 `i `uc ]
-"70
-[; ;main.c: 70:     WriteCmdXLCD(0b00001110);
+"46
+[; ;main.c: 46:     WriteCmdXLCD(0b00001110);
 [e ( _WriteCmdXLCD (1 -> -> 14 `i `uc ]
-"71
-[; ;main.c: 71:     putrsXLCD("Convertidor AD:");
+"47
+[; ;main.c: 47:     putrsXLCD("Convertidor AD:");
 [e ( _putrsXLCD (1 :s 2C ]
-"72
-[; ;main.c: 72: }
+"48
+[; ;main.c: 48: }
 [e :UE 379 ]
 }
-"73
-[; ;main.c: 73: unsigned int conversionADC(void){
-[v _conversionADC `(ui ~T0 @X0 1 ef ]
+"49
+[; ;main.c: 49: uint16_t conversionADC(void){
+[v _conversionADC `(us ~T0 @X0 1 ef ]
 {
 [e :U _conversionADC ]
 [f ]
-"74
-[; ;main.c: 74:     unsigned int resultado;
+"50
+[; ;main.c: 50:     unsigned int resultado;
 [v _resultado `ui ~T0 @X0 1 a ]
-"75
-[; ;main.c: 75:     ADCON0bits.GO_DONE = 1;
+"51
+[; ;main.c: 51:     ADCON0bits.GO_DONE = 1;
 [e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
-"76
-[; ;main.c: 76:     while (ADCON0bits.GO_DONE == 1);
+"52
+[; ;main.c: 52:     while (ADCON0bits.GO_DONE == 1);
 [e $U 381  ]
 [e :U 382 ]
 [e :U 381 ]
 [e $ == -> . . _ADCON0bits 2 1 `i -> 1 `i 382  ]
 [e :U 383 ]
-"77
-[; ;main.c: 77:     resultado = (ADRESH<<8) + ADRESL;
+"53
+[; ;main.c: 53:     resultado = (ADRESH<<8) + ADRESL;
 [e = _resultado -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
-"78
-[; ;main.c: 78:     return resultado;
-[e ) _resultado ]
+"54
+[; ;main.c: 54:     return resultado;
+[e ) -> _resultado `us ]
 [e $UE 380  ]
-"79
-[; ;main.c: 79: }
+"55
+[; ;main.c: 55: }
 [e :UE 380 ]
 }
-"81
-[; ;main.c: 81: void ChecarLEDs(unsigned int res){
-[v _ChecarLEDs `(v ~T0 @X0 1 ef1`ui ]
+"57
+[; ;main.c: 57: void ChecarLEDs(uint16_t res){
+[v _ChecarLEDs `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _ChecarLEDs ]
-[v _res `ui ~T0 @X0 1 r1 ]
+[v _res `us ~T0 @X0 1 r1 ]
 [f ]
-"82
-[; ;main.c: 82:     LATAbits.LA1 = (res&(1<<9)) == 0 ? 0 : 1;
-[e = . . _LATAbits 1 1 -> ? == & _res -> << -> 1 `i -> 9 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"83
-[; ;main.c: 83:     LATAbits.LA2 = (res&(1<<8)) == 0 ? 0 : 1;
-[e = . . _LATAbits 1 2 -> ? == & _res -> << -> 1 `i -> 8 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"84
-[; ;main.c: 84:     LATAbits.LA3 = (res&(1<<7)) == 0 ? 0 : 1;
-[e = . . _LATAbits 1 3 -> ? == & _res -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"85
-[; ;main.c: 85:     LATAbits.LA4 = (res&(1<<6)) == 0 ? 0 : 1;
-[e = . . _LATAbits 1 4 -> ? == & _res -> << -> 1 `i -> 6 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"86
-[; ;main.c: 86:     LATAbits.LA5 = (res&(1<<5)) == 0 ? 0 : 1;
-[e = . . _LATAbits 1 5 -> ? == & _res -> << -> 1 `i -> 5 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"87
-[; ;main.c: 87:     LATBbits.LB0 = (res&(1<<4)) == 0 ? 0 : 1;
-[e = . . _LATBbits 1 0 -> ? == & _res -> << -> 1 `i -> 4 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"88
-[; ;main.c: 88:     LATBbits.LB1 = (res&(1<<3)) == 0 ? 0 : 1;
-[e = . . _LATBbits 1 1 -> ? == & _res -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"89
-[; ;main.c: 89:     LATBbits.LB2 = (res&(1<<2)) == 0 ? 0 : 1;
-[e = . . _LATBbits 1 2 -> ? == & _res -> << -> 1 `i -> 2 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"90
-[; ;main.c: 90:     LATBbits.LB3 = (res&(1<<1)) == 0 ? 0 : 1;
-[e = . . _LATBbits 1 3 -> ? == & _res -> << -> 1 `i -> 1 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"91
-[; ;main.c: 91:     LATBbits.LB4 = (res&(1<<0)) == 0 ? 0 : 1;
-[e = . . _LATBbits 1 4 -> ? == & _res -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
-"92
-[; ;main.c: 92: }
+"58
+[; ;main.c: 58:     LATAbits.LA1 = (res&(1<<9)) == 0 ? 0 : 1;
+[e = . . _LATAbits 1 1 -> ? == & -> _res `ui -> << -> 1 `i -> 9 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"59
+[; ;main.c: 59:     LATAbits.LA2 = (res&(1<<8)) == 0 ? 0 : 1;
+[e = . . _LATAbits 1 2 -> ? == & -> _res `ui -> << -> 1 `i -> 8 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"60
+[; ;main.c: 60:     LATAbits.LA3 = (res&(1<<7)) == 0 ? 0 : 1;
+[e = . . _LATAbits 1 3 -> ? == & -> _res `ui -> << -> 1 `i -> 7 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"61
+[; ;main.c: 61:     LATAbits.LA4 = (res&(1<<6)) == 0 ? 0 : 1;
+[e = . . _LATAbits 1 4 -> ? == & -> _res `ui -> << -> 1 `i -> 6 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"62
+[; ;main.c: 62:     LATAbits.LA5 = (res&(1<<5)) == 0 ? 0 : 1;
+[e = . . _LATAbits 1 5 -> ? == & -> _res `ui -> << -> 1 `i -> 5 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"63
+[; ;main.c: 63:     LATBbits.LB0 = (res&(1<<4)) == 0 ? 0 : 1;
+[e = . . _LATBbits 1 0 -> ? == & -> _res `ui -> << -> 1 `i -> 4 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"64
+[; ;main.c: 64:     LATBbits.LB1 = (res&(1<<3)) == 0 ? 0 : 1;
+[e = . . _LATBbits 1 1 -> ? == & -> _res `ui -> << -> 1 `i -> 3 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"65
+[; ;main.c: 65:     LATBbits.LB2 = (res&(1<<2)) == 0 ? 0 : 1;
+[e = . . _LATBbits 1 2 -> ? == & -> _res `ui -> << -> 1 `i -> 2 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"66
+[; ;main.c: 66:     LATBbits.LB3 = (res&(1<<1)) == 0 ? 0 : 1;
+[e = . . _LATBbits 1 3 -> ? == & -> _res `ui -> << -> 1 `i -> 1 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"67
+[; ;main.c: 67:     LATBbits.LB4 = (res&(1<<0)) == 0 ? 0 : 1;
+[e = . . _LATBbits 1 4 -> ? == & -> _res `ui -> << -> 1 `i -> 0 `i `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `uc ]
+"68
+[; ;main.c: 68: }
 [e :UE 384 ]
 }
-"94
-[; ;main.c: 94: void DelayFor18TCY(void){
+"70
+[; ;main.c: 70: void DelayFor18TCY(void){
 [v _DelayFor18TCY `(v ~T0 @X0 1 ef ]
 {
 [e :U _DelayFor18TCY ]
 [f ]
-"95
-[; ;main.c: 95:   _delay(240);
+"71
+[; ;main.c: 71:   _delay(240);
 [e ( __delay (1 -> -> -> 240 `i `l `ul ]
-"96
-[; ;main.c: 96: }
+"72
+[; ;main.c: 72: }
 [e :UE 385 ]
 }
-"97
-[; ;main.c: 97: void DelayPORXLCD(void){
+"73
+[; ;main.c: 73: void DelayPORXLCD(void){
 [v _DelayPORXLCD `(v ~T0 @X0 1 ef ]
 {
 [e :U _DelayPORXLCD ]
 [f ]
-"98
-[; ;main.c: 98:     delay_ms(15);
+"74
+[; ;main.c: 74:     delay_ms(15);
 [e ( _delay_ms (1 -> -> 15 `i `l ]
-"99
-[; ;main.c: 99: }
+"75
+[; ;main.c: 75: }
 [e :UE 386 ]
 }
-"100
-[; ;main.c: 100: void DelayXLCD(void){
+"76
+[; ;main.c: 76: void DelayXLCD(void){
 [v _DelayXLCD `(v ~T0 @X0 1 ef ]
 {
 [e :U _DelayXLCD ]
 [f ]
-"101
-[; ;main.c: 101:     delay_ms(5);
+"77
+[; ;main.c: 77:     delay_ms(5);
 [e ( _delay_ms (1 -> -> 5 `i `l ]
-"102
-[; ;main.c: 102: }
+"78
+[; ;main.c: 78: }
 [e :UE 387 ]
 }
 [p f _sprintf 8422404 ]

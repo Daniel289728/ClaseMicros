@@ -1,34 +1,24 @@
-/*
- * File:   main.c
- * Author: danie
- *
- * Created on 19 de marzo de 2020, 11:26 AM
- */
-
-
 #include <xc.h>
 #include <stdint.h>
-#include "Alteri.h"
-#define period 100
+#include "Alteri.h"/* Libreria espcífica de tarjeta de desarrollo usada */
 
-void Pasos(uint8_t val);
-void StepDelay(uint32_t val);
-void InterruptInit(void);
+
+void InterruptInit(void);/* Función para inicializar la interrupcion en RB0 */
+
 uint8_t value = 0;
+
 void main(void)
 {
-    OSCCON = 0x72;
+    OSCCON = 0x72;/* Reloj interno como 8MHz*/
     InterruptInit();
     TRISBbits.RB1 = 0;
     TRISBbits.RB2 = 0;
-    //TRISBbits.RB4 = 1;
     while(1)
     {
         if(value){
             LATBbits.LB1 = 1;
             LATBbits.LB2 = 0;
         }
-		/* Rotate Stepper Motor Anticlockwise with Full step sequence */
         else{
             LATBbits.LB1 = 0;
             LATBbits.LB2 = 1;            
@@ -45,17 +35,16 @@ void InterruptInit(void){
 }
 
 
-__interrupt() void ISR(void)  //High priority interrupt ISR
-//void interrupt ServicioInterrupcion(void)
+__interrupt() void ISR(void)
 {
-  if(INTCONbits.INT0IF==1)  //polling for INT0 interrupt
+  if(INTCONbits.INT0IF==1)
   {
-    if(value == 0){
+    if(value == 0){/*Cambiar el valor de value*/
         value = 1;
     }
     else if(value == 1){
         value = 0;
     }
-    INTCONbits.INT0IF=0;  //clearing INT0 interrupt flag
+    INTCONbits.INT0IF=0; /* Vaciar la bandera de interrupción */
   }
 }

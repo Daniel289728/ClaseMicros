@@ -7,13 +7,6 @@
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-
-
-
-
-
-
-
 # 1 "../AlteriADC.X/Alteri.h" 1
 # 40 "../AlteriADC.X/Alteri.h"
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 1 3
@@ -5644,7 +5637,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
             _delay((unsigned long)((1)*(48000000/4000.0)));
         }
     }
-# 9 "main.c" 2
+# 2 "main.c" 2
 # 1 "../AlteriADC.X/xlcd.h" 1
 
 
@@ -5700,8 +5693,7 @@ void putrsXLCD(const char *);
 extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
-# 10 "main.c" 2
-
+# 3 "main.c" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -5840,53 +5832,120 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 12 "main.c" 2
+# 4 "main.c" 2
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+# 173 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+# 209 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 139 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int32_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint32_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 139 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
+# 5 "main.c" 2
 
 char strResultado[5];
 
 
 void initADC(void);
 void initLCD(void);
-unsigned int conversionADC(void);
-void ChecarLEDs(unsigned int res);
 void initLED(void);
+uint16_t conversionADC(void);
+void ChecarLEDs(uint16_t res);
 
 void main(void){
     initLCD();
     initADC();
     initLED();
     while(1){
-
-        sprintf(strResultado,"%04u",conversionADC());
-        ChecarLEDs(conversionADC());
+        uint16_t resultado = conversionADC();
+        sprintf(strResultado,"%04u",resultado);
         WriteCmdXLCD(0b11000000 + 5);
         putsXLCD(strResultado);
+        ChecarLEDs(resultado);
         delay_ms(200);
     }
 }
 
 void initLED(void){
-    TRISAbits.RA1 = 0;
-    TRISAbits.RA2 = 0;
-    TRISAbits.RA3 = 0;
-    TRISAbits.RA4 = 0;
-    TRISAbits.RA5 = 0;
-    TRISBbits.RB0 = 0;
-    TRISBbits.RB1 = 0;
-    TRISBbits.RB2 = 0;
-    TRISBbits.RB3 = 0;
-    TRISBbits.RB4 = 0;
-
-    LATAbits.LA1 = 0;
-    LATAbits.LA2 = 0;
-    LATAbits.LA3 = 0;
-    LATAbits.LA4 = 0;
-    LATAbits.LA5 = 0;
-    LATBbits.LB0 = 0;
-    LATBbits.LB1 = 0;
-    LATBbits.LB2 = 0;
-    LATBbits.LB3 = 0;
-    LATBbits.LB4 = 0;
+    TRISA = 0;
+    TRISB = 0;
+    LATA = 0;
+    LATB = 0;
 }
 void initADC(void){
     ADCON0 = 0b00000001;
@@ -5902,7 +5961,7 @@ void initLCD(void){
     WriteCmdXLCD(0b00001110);
     putrsXLCD("Convertidor AD:");
 }
-unsigned int conversionADC(void){
+uint16_t conversionADC(void){
     unsigned int resultado;
     ADCON0bits.GO_DONE = 1;
     while (ADCON0bits.GO_DONE == 1);
@@ -5910,7 +5969,7 @@ unsigned int conversionADC(void){
     return resultado;
 }
 
-void ChecarLEDs(unsigned int res){
+void ChecarLEDs(uint16_t res){
     LATAbits.LA1 = (res&(1<<9)) == 0 ? 0 : 1;
     LATAbits.LA2 = (res&(1<<8)) == 0 ? 0 : 1;
     LATAbits.LA3 = (res&(1<<7)) == 0 ? 0 : 1;
