@@ -19,10 +19,10 @@ void main()
 
     while(1)
     {
-        if(boton1 && value != 5){/*90 grados*/
+        if(boton1 && value != 5){/*180 grados*/
             value = 5;
         }
-        else if(boton2 && value != 0){/*180 grados*/
+        else if(boton2 && value != 0){/*0 grados*/
             value = 0;
         }
     }
