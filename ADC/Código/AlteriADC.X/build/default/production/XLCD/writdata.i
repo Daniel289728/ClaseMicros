@@ -5626,7 +5626,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 1 "XLCD/writdata.c" 2
 
 # 1 "../AlteriADC.X\\xlcd.h" 1
-# 92 "../AlteriADC.X\\xlcd.h"
+# 93 "../AlteriADC.X\\xlcd.h"
 void OpenXLCD( unsigned char);
 
 
@@ -5663,7 +5663,7 @@ void WriteCmdXLCD( unsigned char);
 
 
 void WriteDataXLCD( char);
-# 137 "../AlteriADC.X\\xlcd.h"
+# 138 "../AlteriADC.X\\xlcd.h"
 void putsXLCD( char *);
 
 
@@ -5680,17 +5680,33 @@ extern void DelayXLCD(void);
 # 16 "XLCD/writdata.c"
 void WriteDataXLCD(char data)
 {
+# 35 "XLCD/writdata.c"
+        TRISD &= 0xf0;
+        PORTD &= 0xf0;
+        PORTD |= ((data>>4)&0x0f);
 
-        TRISD = 0;
-        PORTD = data;
         LATEbits.LATE0 = 1;
         LATEbits.LATE1 = 0;
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
         LATEbits.LATE2 = 0;
-        LATEbits.LATE0 = 0;
-        TRISD = 0xff;
-# 62 "XLCD/writdata.c"
+
+
+
+
+        PORTD &= 0xf0;
+        PORTD |= (data&0x0f);
+
+        DelayFor18TCY();
+        LATEbits.LATE2 = 1;
+        DelayFor18TCY();
+        LATEbits.LATE2 = 0;
+
+
+
+        TRISD |= 0x0f;
+
+
         return;
 }

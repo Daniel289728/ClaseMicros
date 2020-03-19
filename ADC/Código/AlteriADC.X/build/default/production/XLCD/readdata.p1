@@ -14,8 +14,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3392
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3392: extern volatile LATEbits_t LATEbits __attribute__((address(0xF8D)));
 [v _LATEbits `VS138 ~T0 @X0 0 e@3981 ]
-"146 ../AlteriADC.X\xlcd.h
-[; ;../AlteriADC.X\xlcd.h: 146: extern void DelayFor18TCY(void);
+"147 ../AlteriADC.X\xlcd.h
+[; ;../AlteriADC.X\xlcd.h: 147: extern void DelayFor18TCY(void);
 [v _DelayFor18TCY `(v ~T0 @X0 0 ef ]
 "2705 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2705: extern volatile unsigned char PORTD __attribute__((address(0xF83)));
@@ -541,32 +541,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 "18
 [; ;XLCD/readdata.c: 18:         char data;
 [v _data `uc ~T0 @X0 1 a ]
-"21
-[; ;XLCD/readdata.c: 21:         LATEbits.LATE0 = 1;
-[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-"22
-[; ;XLCD/readdata.c: 22:         LATEbits.LATE1 = 1;
+"31
+[; ;XLCD/readdata.c: 31:         LATEbits.LATE1 = 1;
 [e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-"23
-[; ;XLCD/readdata.c: 23:         DelayFor18TCY();
+"32
+[; ;XLCD/readdata.c: 32:         LATEbits.LATE0 = 1;
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+"33
+[; ;XLCD/readdata.c: 33:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
-"24
-[; ;XLCD/readdata.c: 24:         LATEbits.LATE2 = 1;
+"34
+[; ;XLCD/readdata.c: 34:         LATEbits.LATE2 = 1;
 [e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
-"25
-[; ;XLCD/readdata.c: 25:         DelayFor18TCY();
+"35
+[; ;XLCD/readdata.c: 35:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
-"26
-[; ;XLCD/readdata.c: 26:         data = PORTD;
-[e = _data -> _PORTD `uc ]
-"27
-[; ;XLCD/readdata.c: 27:         LATEbits.LATE2 = 0;
+"39
+[; ;XLCD/readdata.c: 39:         data = (PORTD<<4)&0xf0;
+[e = _data -> & << -> _PORTD `i -> 4 `i -> 240 `i `uc ]
+"41
+[; ;XLCD/readdata.c: 41:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"28
-[; ;XLCD/readdata.c: 28:         LATEbits.LATE0 = 0;
+"42
+[; ;XLCD/readdata.c: 42:         DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"43
+[; ;XLCD/readdata.c: 43:         LATEbits.LATE2 = 1;
+[e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
+"44
+[; ;XLCD/readdata.c: 44:         DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"48
+[; ;XLCD/readdata.c: 48:         data |= PORTD&0x0f;
+[e =| _data -> & -> _PORTD `i -> 15 `i `uc ]
+"50
+[; ;XLCD/readdata.c: 50:         LATEbits.LATE2 = 0;
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+"51
+[; ;XLCD/readdata.c: 51:         LATEbits.LATE0 = 0;
 [e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-"29
-[; ;XLCD/readdata.c: 29:         LATEbits.LATE1 = 0;
+"52
+[; ;XLCD/readdata.c: 52:         LATEbits.LATE1 = 0;
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
 "54
 [; ;XLCD/readdata.c: 54:         return(data);

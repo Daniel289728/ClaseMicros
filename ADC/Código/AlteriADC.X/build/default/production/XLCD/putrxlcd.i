@@ -5626,7 +5626,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 1 "XLCD/putrxlcd.c" 2
 
 # 1 "../AlteriADC.X\\xlcd.h" 1
-# 92 "../AlteriADC.X\\xlcd.h"
+# 93 "../AlteriADC.X\\xlcd.h"
 void OpenXLCD( unsigned char);
 
 
@@ -5663,7 +5663,7 @@ void WriteCmdXLCD( unsigned char);
 
 
 void WriteDataXLCD( char);
-# 137 "../AlteriADC.X\\xlcd.h"
+# 138 "../AlteriADC.X\\xlcd.h"
 void putsXLCD( char *);
 
 

@@ -5626,7 +5626,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 1 "XLCD/busyxlcd.c" 2
 
 # 1 "../AlteriADC.X\\xlcd.h" 1
-# 92 "../AlteriADC.X\\xlcd.h"
+# 93 "../AlteriADC.X\\xlcd.h"
 void OpenXLCD( unsigned char);
 
 
@@ -5663,7 +5663,7 @@ void WriteCmdXLCD( unsigned char);
 
 
 void WriteDataXLCD( char);
-# 137 "../AlteriADC.X\\xlcd.h"
+# 138 "../AlteriADC.X\\xlcd.h"
 void putsXLCD( char *);
 
 
@@ -5685,9 +5685,14 @@ unsigned char BusyXLCD(void)
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
+# 35 "XLCD/busyxlcd.c"
+        if(PORTD&0x08)
 
-        if(PORTD&0x80)
         {
+                LATEbits.LATE2 = 0;
+                DelayFor18TCY();
+                LATEbits.LATE2 = 1;
+                DelayFor18TCY();
                 LATEbits.LATE2 = 0;
                 LATEbits.LATE1 = 0;
                 return 1;
@@ -5695,8 +5700,12 @@ unsigned char BusyXLCD(void)
         else
         {
                 LATEbits.LATE2 = 0;
+                DelayFor18TCY();
+                LATEbits.LATE2 = 1;
+                DelayFor18TCY();
+                LATEbits.LATE2 = 0;
                 LATEbits.LATE1 = 0;
                 return 0;
         }
-# 57 "XLCD/busyxlcd.c"
+
 }

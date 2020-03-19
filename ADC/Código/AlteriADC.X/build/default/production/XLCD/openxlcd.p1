@@ -35,21 +35,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3392
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3392: extern volatile LATEbits_t LATEbits __attribute__((address(0xF8D)));
 [v _LATEbits `VS138 ~T0 @X0 0 e@3981 ]
-"147 ../AlteriADC.X\xlcd.h
-[; ;../AlteriADC.X\xlcd.h: 147: extern void DelayPORXLCD(void);
+"148 ../AlteriADC.X\xlcd.h
+[; ;../AlteriADC.X\xlcd.h: 148: extern void DelayPORXLCD(void);
 [v _DelayPORXLCD `(v ~T0 @X0 0 ef ]
-"122
-[; ;../AlteriADC.X\xlcd.h: 122: void WriteCmdXLCD( unsigned char);
+"123
+[; ;../AlteriADC.X\xlcd.h: 123: void WriteCmdXLCD( unsigned char);
 [v _WriteCmdXLCD `(v ~T0 @X0 0 ef1`uc ]
 [v F3152 `(v ~T0 @X0 1 tf1`ul ]
 "187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
 [v __delay `JF3152 ~T0 @X0 0 e ]
 [p i __delay ]
-"107 ../AlteriADC.X\xlcd.h
-[; ;../AlteriADC.X\xlcd.h: 107: unsigned char BusyXLCD(void);
+"108 ../AlteriADC.X\xlcd.h
+[; ;../AlteriADC.X\xlcd.h: 108: unsigned char BusyXLCD(void);
 [v _BusyXLCD `(uc ~T0 @X0 0 ef ]
-"102
-[; ;../AlteriADC.X\xlcd.h: 102: void SetDDRamAddr( unsigned char);
+"103
+[; ;../AlteriADC.X\xlcd.h: 103: void SetDDRamAddr( unsigned char);
 [v _SetDDRamAddr `(v ~T0 @X0 0 ef1`uc ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
@@ -574,12 +574,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20
 [; ;XLCD/openxlcd.c: 20: {
 [f ]
-"24
-[; ;XLCD/openxlcd.c: 24:         PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
-"25
-[; ;XLCD/openxlcd.c: 25:         TRISD = 0x00;
-[e = _TRISD -> -> 0 `i `uc ]
+"31
+[; ;XLCD/openxlcd.c: 31:         PORTD &= 0xf0;
+[e =& _PORTD -> -> 240 `i `Vuc ]
+"32
+[; ;XLCD/openxlcd.c: 32:         TRISD &= 0xF0;
+[e =& _TRISD -> -> 240 `i `Vuc ]
 "35
 [; ;XLCD/openxlcd.c: 35:         TRISEbits.TRISE1 = 0;
 [e = . . _TRISEbits 0 1 -> -> 0 `i `uc ]

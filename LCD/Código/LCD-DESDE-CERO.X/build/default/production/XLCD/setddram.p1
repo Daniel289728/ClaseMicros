@@ -3550,15 +3550,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _DDaddr `uc ~T0 @X0 1 r1 ]
 "14
 [f ]
-[; ;setddram.c: 28: TRISD &= 0x0f;
-"28
-[e =& _TRISD -> -> 15 `i `uc ]
-[; ;setddram.c: 29: PORTD &= 0x0f;
-"29
-[e =& _PORTD -> -> 15 `i `uc ]
-[; ;setddram.c: 30: PORTD |= ((DDaddr | 0b10000000) & 0xf0);
-"30
-[e =| _PORTD -> & | -> _DDaddr `i -> 128 `i -> 240 `i `uc ]
+[; ;setddram.c: 32: TRISD &= 0xf0;
+"32
+[e =& _TRISD -> -> 240 `i `uc ]
+[; ;setddram.c: 33: PORTD &= 0xf0;
+"33
+[e =& _PORTD -> -> 240 `i `uc ]
+[; ;setddram.c: 34: PORTD |= (((DDaddr | 0b10000000)>>4) & 0x0f);
+"34
+[e =| _PORTD -> & >> | -> _DDaddr `i -> 128 `i -> 4 `i -> 15 `i `uc ]
 [; ;setddram.c: 36: LATEbits.LATE1 = 0;
 "36
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
@@ -3577,12 +3577,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;setddram.c: 41: LATEbits.LATE2 = 0;
 "41
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-[; ;setddram.c: 43: PORTD &= 0x0f;
-"43
-[e =& _PORTD -> -> 15 `i `uc ]
-[; ;setddram.c: 44: PORTD |= ((DDaddr<<4)&0xf0);
-"44
-[e =| _PORTD -> & << -> _DDaddr `i -> 4 `i -> 240 `i `uc ]
+[; ;setddram.c: 46: PORTD &= 0xf0;
+"46
+[e =& _PORTD -> -> 240 `i `uc ]
+[; ;setddram.c: 47: PORTD |= (DDaddr&0x0f);
+"47
+[e =| _PORTD -> & -> _DDaddr `i -> 15 `i `uc ]
 [; ;setddram.c: 49: DelayFor18TCY();
 "49
 [e ( _DelayFor18TCY ..  ]
@@ -3595,9 +3595,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;setddram.c: 52: LATEbits.LATE2 = 0;
 "52
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-[; ;setddram.c: 54: TRISD |= 0xf0;
-"54
-[e =| _TRISD -> -> 240 `i `uc ]
+[; ;setddram.c: 56: TRISD |= 0x0f;
+"56
+[e =| _TRISD -> -> 15 `i `uc ]
 [; ;setddram.c: 59: return;
 "59
 [e $UE 362  ]

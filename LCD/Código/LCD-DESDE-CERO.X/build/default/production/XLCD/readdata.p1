@@ -3563,9 +3563,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;readdata.c: 35: DelayFor18TCY();
 "35
 [e ( _DelayFor18TCY ..  ]
-[; ;readdata.c: 37: data = PORTD&0xf0;
-"37
-[e = _data -> & -> _PORTD `i -> 240 `i `uc ]
+[; ;readdata.c: 39: data = (PORTD<<4)&0xf0;
+"39
+[e = _data -> & << -> _PORTD `i -> 4 `i -> 240 `i `uc ]
 [; ;readdata.c: 41: LATEbits.LATE2 = 0;
 "41
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
@@ -3578,9 +3578,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;readdata.c: 44: DelayFor18TCY();
 "44
 [e ( _DelayFor18TCY ..  ]
-[; ;readdata.c: 46: data |= (PORTD>>4)&0x0f;
-"46
-[e =| _data -> & >> -> _PORTD `i -> 4 `i -> 15 `i `uc ]
+[; ;readdata.c: 48: data |= PORTD&0x0f;
+"48
+[e =| _data -> & -> _PORTD `i -> 15 `i `uc ]
 [; ;readdata.c: 50: LATEbits.LATE2 = 0;
 "50
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]

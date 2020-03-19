@@ -5613,12 +5613,11 @@ extern void DelayXLCD(void);
 void SetCGRamAddr(unsigned char CGaddr)
 {
 
-# 29
-TRISD &= 0x0f;
-PORTD &= 0x0f;
-PORTD |= ((CGaddr | 0b01000000) & 0xf0);
+# 33
+TRISD &= 0xf0;
+PORTD &= 0xf0;
+PORTD |= (((CGaddr |0b01000000)>>4) & 0x0f);
 
-# 37
 LATEbits.LATE1 = 0;
 LATEbits.LATE0 = 0;
 DelayFor18TCY();
@@ -5626,18 +5625,22 @@ LATEbits.LATE2 = 1;
 DelayFor18TCY();
 LATEbits.LATE2 = 0;
 
-PORTD &= 0x0f;
-PORTD |= ((CGaddr<<4)&0xf0);
 
-# 50
+
+
+PORTD &= 0xf0;
+PORTD |= (CGaddr&0x0f);
+
 DelayFor18TCY();
 LATEbits.LATE2 = 1;
 DelayFor18TCY();
 LATEbits.LATE2 = 0;
 
-TRISD |= 0xf0;
 
-# 60
+
+TRISD |= 0x0f;
+
+
 return;
 }
 

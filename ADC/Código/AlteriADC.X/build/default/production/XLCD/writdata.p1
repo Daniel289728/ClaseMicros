@@ -20,8 +20,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3392
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3392: extern volatile LATEbits_t LATEbits __attribute__((address(0xF8D)));
 [v _LATEbits `VS138 ~T0 @X0 0 e@3981 ]
-"146 ../AlteriADC.X\xlcd.h
-[; ;../AlteriADC.X\xlcd.h: 146: extern void DelayFor18TCY(void);
+"147 ../AlteriADC.X\xlcd.h
+[; ;../AlteriADC.X\xlcd.h: 147: extern void DelayFor18TCY(void);
 [v _DelayFor18TCY `(v ~T0 @X0 0 ef ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
@@ -546,36 +546,54 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17
 [; ;XLCD/writdata.c: 17: {
 [f ]
-"19
-[; ;XLCD/writdata.c: 19:         TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
-"20
-[; ;XLCD/writdata.c: 20:         PORTD = data;
-[e = _PORTD -> _data `uc ]
-"21
-[; ;XLCD/writdata.c: 21:         LATEbits.LATE0 = 1;
+"35
+[; ;XLCD/writdata.c: 35:         TRISD &= 0xf0;
+[e =& _TRISD -> -> 240 `i `Vuc ]
+"36
+[; ;XLCD/writdata.c: 36:         PORTD &= 0xf0;
+[e =& _PORTD -> -> 240 `i `Vuc ]
+"37
+[; ;XLCD/writdata.c: 37:         PORTD |= ((data>>4)&0x0f);
+[e =| _PORTD -> & >> -> _data `i -> 4 `i -> 15 `i `Vuc ]
+"39
+[; ;XLCD/writdata.c: 39:         LATEbits.LATE0 = 1;
 [e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-"22
-[; ;XLCD/writdata.c: 22:         LATEbits.LATE1 = 0;
+"40
+[; ;XLCD/writdata.c: 40:         LATEbits.LATE1 = 0;
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"23
-[; ;XLCD/writdata.c: 23:         DelayFor18TCY();
+"41
+[; ;XLCD/writdata.c: 41:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
-"24
-[; ;XLCD/writdata.c: 24:         LATEbits.LATE2 = 1;
+"42
+[; ;XLCD/writdata.c: 42:         LATEbits.LATE2 = 1;
 [e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
-"25
-[; ;XLCD/writdata.c: 25:         DelayFor18TCY();
+"43
+[; ;XLCD/writdata.c: 43:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
-"26
-[; ;XLCD/writdata.c: 26:         LATEbits.LATE2 = 0;
+"44
+[; ;XLCD/writdata.c: 44:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"27
-[; ;XLCD/writdata.c: 27:         LATEbits.LATE0 = 0;
-[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-"28
-[; ;XLCD/writdata.c: 28:         TRISD = 0xff;
-[e = _TRISD -> -> 255 `i `uc ]
+"49
+[; ;XLCD/writdata.c: 49:         PORTD &= 0xf0;
+[e =& _PORTD -> -> 240 `i `Vuc ]
+"50
+[; ;XLCD/writdata.c: 50:         PORTD |= (data&0x0f);
+[e =| _PORTD -> & -> _data `i -> 15 `i `Vuc ]
+"52
+[; ;XLCD/writdata.c: 52:         DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"53
+[; ;XLCD/writdata.c: 53:         LATEbits.LATE2 = 1;
+[e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
+"54
+[; ;XLCD/writdata.c: 54:         DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"55
+[; ;XLCD/writdata.c: 55:         LATEbits.LATE2 = 0;
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+"59
+[; ;XLCD/writdata.c: 59:         TRISD |= 0x0f;
+[e =| _TRISD -> -> 15 `i `Vuc ]
 "62
 [; ;XLCD/writdata.c: 62:         return;
 [e $UE 367  ]

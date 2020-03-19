@@ -5626,7 +5626,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 1 "XLCD/readaddr.c" 2
 
 # 1 "../AlteriADC.X\\xlcd.h" 1
-# 92 "../AlteriADC.X\\xlcd.h"
+# 93 "../AlteriADC.X\\xlcd.h"
 void OpenXLCD( unsigned char);
 
 
@@ -5663,7 +5663,7 @@ void WriteCmdXLCD( unsigned char);
 
 
 void WriteDataXLCD( char);
-# 137 "../AlteriADC.X\\xlcd.h"
+# 138 "../AlteriADC.X\\xlcd.h"
 void putsXLCD( char *);
 
 
@@ -5681,16 +5681,28 @@ extern void DelayXLCD(void);
 unsigned char ReadAddrXLCD(void)
 {
         char data;
-
-
+# 30 "XLCD/readaddr.c"
         LATEbits.LATE1 = 1;
         LATEbits.LATE0 = 0;
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
-        data = PORTD;
+
+
+
+        data = (PORTD<<4)&0xf0;
+
+        LATEbits.LATE2 = 0;
+        DelayFor18TCY();
+        LATEbits.LATE2 = 1;
+        DelayFor18TCY();
+
+
+
+        data |= PORTD&0x0f;
+
         LATEbits.LATE2 = 0;
         LATEbits.LATE1 = 0;
-# 52 "XLCD/readaddr.c"
+
         return (data&0x7f);
 }

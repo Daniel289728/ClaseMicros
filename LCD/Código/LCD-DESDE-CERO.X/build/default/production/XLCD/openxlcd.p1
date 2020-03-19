@@ -3571,12 +3571,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _lcdtype `uc ~T0 @X0 1 r1 ]
 "21
 [f ]
-[; ;openxlcd.c: 29: PORTD &= 0x0f;
-"29
-[e =& _PORTD -> -> 15 `i `uc ]
-[; ;openxlcd.c: 30: TRISD &= 0x0F;
-"30
-[e =& _TRISD -> -> 15 `i `uc ]
+[; ;openxlcd.c: 32: PORTD &= 0xf0;
+"32
+[e =& _PORTD -> -> 240 `i `uc ]
+[; ;openxlcd.c: 33: TRISD &= 0xF0;
+"33
+[e =& _TRISD -> -> 240 `i `uc ]
 [; ;openxlcd.c: 36: TRISEbits.TRISE1 = 0;
 "36
 [e = . . _TRISEbits 0 1 -> -> 0 `i `uc ]

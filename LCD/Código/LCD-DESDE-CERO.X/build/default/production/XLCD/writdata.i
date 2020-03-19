@@ -5613,12 +5613,11 @@ extern void DelayXLCD(void);
 void WriteDataXLCD(char data)
 {
 
-# 31
-TRISD &= 0x0f;
-PORTD &= 0x0f;
-PORTD |= data&0xf0;
+# 35
+TRISD &= 0xf0;
+PORTD &= 0xf0;
+PORTD |= ((data>>4)&0x0f);
 
-# 39
 LATEbits.LATE0 = 1;
 LATEbits.LATE1 = 0;
 DelayFor18TCY();
@@ -5626,18 +5625,22 @@ LATEbits.LATE2 = 1;
 DelayFor18TCY();
 LATEbits.LATE2 = 0;
 
-PORTD &= 0x0f;
-PORTD |= ((data<<4)&0xf0);
 
-# 52
+
+
+PORTD &= 0xf0;
+PORTD |= (data&0x0f);
+
 DelayFor18TCY();
 LATEbits.LATE2 = 1;
 DelayFor18TCY();
 LATEbits.LATE2 = 0;
 
-TRISD |= 0xf0;
 
-# 62
+
+TRISD |= 0x0f;
+
+
 return;
 }
 

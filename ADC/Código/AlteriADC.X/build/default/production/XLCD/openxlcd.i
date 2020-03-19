@@ -5627,7 +5627,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 
 
 # 1 "../AlteriADC.X\\xlcd.h" 1
-# 92 "../AlteriADC.X\\xlcd.h"
+# 93 "../AlteriADC.X\\xlcd.h"
 void OpenXLCD( unsigned char);
 
 
@@ -5664,7 +5664,7 @@ void WriteCmdXLCD( unsigned char);
 
 
 void WriteDataXLCD( char);
-# 137 "../AlteriADC.X\\xlcd.h"
+# 138 "../AlteriADC.X\\xlcd.h"
 void putsXLCD( char *);
 
 
@@ -5681,12 +5681,11 @@ extern void DelayXLCD(void);
 # 19 "XLCD/openxlcd.c"
 void OpenXLCD(unsigned char lcdtype)
 {
+# 31 "XLCD/openxlcd.c"
+        PORTD &= 0xf0;
+        TRISD &= 0xF0;
 
 
-
-        PORTD = 0;
-        TRISD = 0x00;
-# 35 "XLCD/openxlcd.c"
         TRISEbits.TRISE1 = 0;
         TRISEbits.TRISE0 = 0;
         TRISEbits.TRISE2 = 0;

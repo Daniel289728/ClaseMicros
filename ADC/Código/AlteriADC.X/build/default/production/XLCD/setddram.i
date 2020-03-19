@@ -5626,7 +5626,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 1 "XLCD/setddram.c" 2
 
 # 1 "../AlteriADC.X\\xlcd.h" 1
-# 92 "../AlteriADC.X\\xlcd.h"
+# 93 "../AlteriADC.X\\xlcd.h"
 void OpenXLCD( unsigned char);
 
 
@@ -5663,7 +5663,7 @@ void WriteCmdXLCD( unsigned char);
 
 
 void WriteDataXLCD( char);
-# 137 "../AlteriADC.X\\xlcd.h"
+# 138 "../AlteriADC.X\\xlcd.h"
 void putsXLCD( char *);
 
 
@@ -5680,17 +5680,33 @@ extern void DelayXLCD(void);
 # 13 "XLCD/setddram.c"
 void SetDDRamAddr(unsigned char DDaddr)
 {
+# 32 "XLCD/setddram.c"
+        TRISD &= 0xf0;
+        PORTD &= 0xf0;
+        PORTD |= (((DDaddr | 0b10000000)>>4) & 0x0f);
 
-        TRISD = 0;
-        PORTD = DDaddr | 0b10000000;
         LATEbits.LATE1 = 0;
         LATEbits.LATE0 = 0;
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
         LATEbits.LATE2 = 0;
+
+
+
+
+        PORTD &= 0xf0;
+        PORTD |= (DDaddr&0x0f);
+
         DelayFor18TCY();
-        TRISD = 0xff;
-# 59 "XLCD/setddram.c"
+        LATEbits.LATE2 = 1;
+        DelayFor18TCY();
+        LATEbits.LATE2 = 0;
+
+
+
+        TRISD |= 0x0f;
+
+
         return;
 }

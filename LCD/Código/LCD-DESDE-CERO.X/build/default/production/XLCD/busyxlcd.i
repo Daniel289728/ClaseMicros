@@ -5618,10 +5618,9 @@ DelayFor18TCY();
 LATEbits.LATE2 = 1;
 DelayFor18TCY();
 
-# 33
-if(PORTD&0x80)
+# 35
+if(PORTD&0x08)
 
-# 37
 {
 LATEbits.LATE2 = 0;
 DelayFor18TCY();

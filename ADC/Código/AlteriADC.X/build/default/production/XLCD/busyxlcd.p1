@@ -14,8 +14,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3392
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3392: extern volatile LATEbits_t LATEbits __attribute__((address(0xF8D)));
 [v _LATEbits `VS138 ~T0 @X0 0 e@3981 ]
-"146 ../AlteriADC.X\xlcd.h
-[; ;../AlteriADC.X\xlcd.h: 146: extern void DelayFor18TCY(void);
+"147 ../AlteriADC.X\xlcd.h
+[; ;../AlteriADC.X\xlcd.h: 147: extern void DelayFor18TCY(void);
 [v _DelayFor18TCY `(v ~T0 @X0 0 ef ]
 "2705 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 2705: extern volatile unsigned char PORTD __attribute__((address(0xF83)));
@@ -553,44 +553,68 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17
 [; ;XLCD/busyxlcd.c: 17:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
-"19
-[; ;XLCD/busyxlcd.c: 19:         if(PORTD&0x80)
-[e $ ! != & -> _PORTD `i -> 128 `i -> 0 `i 368  ]
-"20
-[; ;XLCD/busyxlcd.c: 20:         {
+"35
+[; ;XLCD/busyxlcd.c: 35:         if(PORTD&0x08)
+[e $ ! != & -> _PORTD `i -> 8 `i -> 0 `i 368  ]
+"37
+[; ;XLCD/busyxlcd.c: 37:         {
 {
-"21
-[; ;XLCD/busyxlcd.c: 21:                 LATEbits.LATE2 = 0;
+"38
+[; ;XLCD/busyxlcd.c: 38:                 LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"22
-[; ;XLCD/busyxlcd.c: 22:                 LATEbits.LATE1 = 0;
+"39
+[; ;XLCD/busyxlcd.c: 39:                 DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"40
+[; ;XLCD/busyxlcd.c: 40:                 LATEbits.LATE2 = 1;
+[e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
+"41
+[; ;XLCD/busyxlcd.c: 41:                 DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"42
+[; ;XLCD/busyxlcd.c: 42:                 LATEbits.LATE2 = 0;
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+"43
+[; ;XLCD/busyxlcd.c: 43:                 LATEbits.LATE1 = 0;
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"23
-[; ;XLCD/busyxlcd.c: 23:                 return 1;
+"44
+[; ;XLCD/busyxlcd.c: 44:                 return 1;
 [e ) -> -> 1 `i `uc ]
 [e $UE 367  ]
-"24
-[; ;XLCD/busyxlcd.c: 24:         }
+"45
+[; ;XLCD/busyxlcd.c: 45:         }
 }
 [e $U 369  ]
-"25
-[; ;XLCD/busyxlcd.c: 25:         else
+"46
+[; ;XLCD/busyxlcd.c: 46:         else
 [e :U 368 ]
-"26
-[; ;XLCD/busyxlcd.c: 26:         {
+"47
+[; ;XLCD/busyxlcd.c: 47:         {
 {
-"27
-[; ;XLCD/busyxlcd.c: 27:                 LATEbits.LATE2 = 0;
+"48
+[; ;XLCD/busyxlcd.c: 48:                 LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"28
-[; ;XLCD/busyxlcd.c: 28:                 LATEbits.LATE1 = 0;
+"49
+[; ;XLCD/busyxlcd.c: 49:                 DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"50
+[; ;XLCD/busyxlcd.c: 50:                 LATEbits.LATE2 = 1;
+[e = . . _LATEbits 0 2 -> -> 1 `i `uc ]
+"51
+[; ;XLCD/busyxlcd.c: 51:                 DelayFor18TCY();
+[e ( _DelayFor18TCY ..  ]
+"52
+[; ;XLCD/busyxlcd.c: 52:                 LATEbits.LATE2 = 0;
+[e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
+"53
+[; ;XLCD/busyxlcd.c: 53:                 LATEbits.LATE1 = 0;
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"29
-[; ;XLCD/busyxlcd.c: 29:                 return 0;
+"54
+[; ;XLCD/busyxlcd.c: 54:                 return 0;
 [e ) -> -> 0 `i `uc ]
 [e $UE 367  ]
-"30
-[; ;XLCD/busyxlcd.c: 30:         }
+"55
+[; ;XLCD/busyxlcd.c: 55:         }
 }
 [e :U 369 ]
 "57

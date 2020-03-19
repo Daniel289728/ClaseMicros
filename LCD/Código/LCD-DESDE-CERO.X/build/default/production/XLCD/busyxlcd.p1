@@ -3560,9 +3560,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;busyxlcd.c: 17: DelayFor18TCY();
 "17
 [e ( _DelayFor18TCY ..  ]
-[; ;busyxlcd.c: 33: if(PORTD&0x80)
-"33
-[e $ ! != & -> _PORTD `i -> 128 `i -> 0 `i 363  ]
+[; ;busyxlcd.c: 35: if(PORTD&0x08)
+"35
+[e $ ! != & -> _PORTD `i -> 8 `i -> 0 `i 363  ]
 [; ;busyxlcd.c: 37: {
 "37
 {

@@ -3550,15 +3550,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _data `uc ~T0 @X0 1 r1 ]
 "17
 [f ]
-[; ;writdata.c: 31: TRISD &= 0x0f;
-"31
-[e =& _TRISD -> -> 15 `i `uc ]
-[; ;writdata.c: 32: PORTD &= 0x0f;
-"32
-[e =& _PORTD -> -> 15 `i `uc ]
-[; ;writdata.c: 33: PORTD |= data&0xf0;
-"33
-[e =| _PORTD -> & -> _data `i -> 240 `i `uc ]
+[; ;writdata.c: 35: TRISD &= 0xf0;
+"35
+[e =& _TRISD -> -> 240 `i `uc ]
+[; ;writdata.c: 36: PORTD &= 0xf0;
+"36
+[e =& _PORTD -> -> 240 `i `uc ]
+[; ;writdata.c: 37: PORTD |= ((data>>4)&0x0f);
+"37
+[e =| _PORTD -> & >> -> _data `i -> 4 `i -> 15 `i `uc ]
 [; ;writdata.c: 39: LATEbits.LATE0 = 1;
 "39
 [e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
@@ -3577,12 +3577,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;writdata.c: 44: LATEbits.LATE2 = 0;
 "44
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-[; ;writdata.c: 46: PORTD &= 0x0f;
-"46
-[e =& _PORTD -> -> 15 `i `uc ]
-[; ;writdata.c: 47: PORTD |= ((data<<4)&0xf0);
-"47
-[e =| _PORTD -> & << -> _data `i -> 4 `i -> 240 `i `uc ]
+[; ;writdata.c: 49: PORTD &= 0xf0;
+"49
+[e =& _PORTD -> -> 240 `i `uc ]
+[; ;writdata.c: 50: PORTD |= (data&0x0f);
+"50
+[e =| _PORTD -> & -> _data `i -> 15 `i `uc ]
 [; ;writdata.c: 52: DelayFor18TCY();
 "52
 [e ( _DelayFor18TCY ..  ]
@@ -3595,9 +3595,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;writdata.c: 55: LATEbits.LATE2 = 0;
 "55
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-[; ;writdata.c: 57: TRISD |= 0xf0;
-"57
-[e =| _TRISD -> -> 240 `i `uc ]
+[; ;writdata.c: 59: TRISD |= 0x0f;
+"59
+[e =| _TRISD -> -> 15 `i `uc ]
 [; ;writdata.c: 62: return;
 "62
 [e $UE 362  ]
