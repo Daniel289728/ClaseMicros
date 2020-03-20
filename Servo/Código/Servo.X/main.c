@@ -3,15 +3,18 @@
 #include<pic18.h>
 
 #define servo LATBbits.LB2
-#define boton1 PORTBbits.RB0
-#define boton2 PORTBbits.RB1
+#define boton1 PORTBbits.RB4
 
-#define _XTAL_FREQ 8000000
+//#define _XTAL_FREQ 20000000
 int count=0, value;
 
 void main()
 {
-    TRISB |= 0x03;
+    TRISBbits.RB4 = 1;
+    TRISBbits.RB2 = 0;
+    TRISDbits.RD0= 0;
+    LATD0 |= 1;
+    //TRISB |= 0x10;
     GIE = 1;        /* Habilitar interrupciones globales*/
     TMR0IE = 1;     /*Habilitar interrupción del timer 0*/
     T0CON   = 0XC3; /* Preescaler */    
@@ -19,11 +22,11 @@ void main()
 
     while(1)
     {
-        if(boton1 && value != 5){/*180 grados*/
-            value = 5;
-        }
-        else if(boton2 && value != 0){/*0 grados*/
+        if(boton1 && value == 5){/*180 grados*/
             value = 0;
+        }
+        else if(boton1 && value == 0){/*0 grados*/
+            value = 5;
         }
     }
 }

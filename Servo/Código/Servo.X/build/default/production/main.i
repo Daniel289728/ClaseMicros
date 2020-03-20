@@ -5649,9 +5649,11 @@ int count=0, value;
 
 void main()
 {
-    TRISBbits.RB0 = 1;
-    TRISBbits.RB1 = 1;
+    TRISBbits.RB4 = 1;
     TRISBbits.RB2 = 0;
+    TRISDbits.RD0= 0;
+    LATD0 |= 1;
+
     GIE = 1;
     TMR0IE = 1;
     T0CON = 0XC3;
@@ -5659,11 +5661,11 @@ void main()
 
     while(1)
     {
-        if(PORTBbits.RB0 && value != 5){
-            value = 5;
-        }
-        else if(PORTBbits.RB1 && value != 0){
+        if(PORTBbits.RB4 && value == 5){
             value = 0;
+        }
+        else if(PORTBbits.RB4 && value == 0){
+            value = 5;
         }
     }
 }

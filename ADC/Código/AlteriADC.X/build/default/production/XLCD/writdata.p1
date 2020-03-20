@@ -546,15 +546,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17
 [; ;XLCD/writdata.c: 17: {
 [f ]
-"35
-[; ;XLCD/writdata.c: 35:         TRISD &= 0xf0;
-[e =& _TRISD -> -> 240 `i `Vuc ]
-"36
-[; ;XLCD/writdata.c: 36:         PORTD &= 0xf0;
-[e =& _PORTD -> -> 240 `i `Vuc ]
-"37
-[; ;XLCD/writdata.c: 37:         PORTD |= ((data>>4)&0x0f);
-[e =| _PORTD -> & >> -> _data `i -> 4 `i -> 15 `i `Vuc ]
+"31
+[; ;XLCD/writdata.c: 31:         TRISD &= 0x0f;
+[e =& _TRISD -> -> 15 `i `Vuc ]
+"32
+[; ;XLCD/writdata.c: 32:         PORTD &= 0x0f;
+[e =& _PORTD -> -> 15 `i `Vuc ]
+"33
+[; ;XLCD/writdata.c: 33:         PORTD |= data&0xf0;
+[e =| _PORTD -> & -> _data `i -> 240 `i `Vuc ]
 "39
 [; ;XLCD/writdata.c: 39:         LATEbits.LATE0 = 1;
 [e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
@@ -573,12 +573,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;XLCD/writdata.c: 44:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"49
-[; ;XLCD/writdata.c: 49:         PORTD &= 0xf0;
-[e =& _PORTD -> -> 240 `i `Vuc ]
-"50
-[; ;XLCD/writdata.c: 50:         PORTD |= (data&0x0f);
-[e =| _PORTD -> & -> _data `i -> 15 `i `Vuc ]
+"46
+[; ;XLCD/writdata.c: 46:         PORTD &= 0x0f;
+[e =& _PORTD -> -> 15 `i `Vuc ]
+"47
+[; ;XLCD/writdata.c: 47:         PORTD |= ((data<<4)&0xf0);
+[e =| _PORTD -> & << -> _data `i -> 4 `i -> 240 `i `Vuc ]
 "52
 [; ;XLCD/writdata.c: 52:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
@@ -591,9 +591,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "55
 [; ;XLCD/writdata.c: 55:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"59
-[; ;XLCD/writdata.c: 59:         TRISD |= 0x0f;
-[e =| _TRISD -> -> 15 `i `Vuc ]
+"57
+[; ;XLCD/writdata.c: 57:         TRISD |= 0xf0;
+[e =| _TRISD -> -> 240 `i `Vuc ]
 "62
 [; ;XLCD/writdata.c: 62:         return;
 [e $UE 367  ]

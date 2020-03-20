@@ -5680,10 +5680,14 @@ extern void DelayXLCD(void);
 # 16 "XLCD/writdata.c"
 void WriteDataXLCD(char data)
 {
-# 35 "XLCD/writdata.c"
-        TRISD &= 0xf0;
-        PORTD &= 0xf0;
-        PORTD |= ((data>>4)&0x0f);
+# 31 "XLCD/writdata.c"
+        TRISD &= 0x0f;
+        PORTD &= 0x0f;
+        PORTD |= data&0xf0;
+
+
+
+
 
         LATEbits.LATE0 = 1;
         LATEbits.LATE1 = 0;
@@ -5692,20 +5696,20 @@ void WriteDataXLCD(char data)
         DelayFor18TCY();
         LATEbits.LATE2 = 0;
 
+        PORTD &= 0x0f;
+        PORTD |= ((data<<4)&0xf0);
 
 
 
-        PORTD &= 0xf0;
-        PORTD |= (data&0x0f);
 
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
         LATEbits.LATE2 = 0;
 
+        TRISD |= 0xf0;
 
 
-        TRISD |= 0x0f;
 
 
         return;

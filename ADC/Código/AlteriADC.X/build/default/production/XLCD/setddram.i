@@ -5680,10 +5680,14 @@ extern void DelayXLCD(void);
 # 13 "XLCD/setddram.c"
 void SetDDRamAddr(unsigned char DDaddr)
 {
-# 32 "XLCD/setddram.c"
-        TRISD &= 0xf0;
-        PORTD &= 0xf0;
-        PORTD |= (((DDaddr | 0b10000000)>>4) & 0x0f);
+# 28 "XLCD/setddram.c"
+        TRISD &= 0x0f;
+        PORTD &= 0x0f;
+        PORTD |= ((DDaddr | 0b10000000) & 0xf0);
+
+
+
+
 
         LATEbits.LATE1 = 0;
         LATEbits.LATE0 = 0;
@@ -5692,20 +5696,20 @@ void SetDDRamAddr(unsigned char DDaddr)
         DelayFor18TCY();
         LATEbits.LATE2 = 0;
 
+        PORTD &= 0x0f;
+        PORTD |= ((DDaddr<<4)&0xf0);
 
 
 
-        PORTD &= 0xf0;
-        PORTD |= (DDaddr&0x0f);
 
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
         LATEbits.LATE2 = 0;
 
+        TRISD |= 0xf0;
 
 
-        TRISD |= 0x0f;
 
 
         return;

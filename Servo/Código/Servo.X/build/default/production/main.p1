@@ -19,6 +19,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3657
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3657: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
 [v _TRISBbits `VS147 ~T0 @X0 0 e@3987 ]
+"4012
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4012:     struct {
+[s S160 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S160 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
+"4022
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4022:     struct {
+[s S161 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S161 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"4011
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4011: typedef union {
+[u S159 `S160 1 `S161 1 ]
+[n S159 . . . ]
+"4033
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4033: extern volatile TRISDbits_t TRISDbits __attribute__((address(0xF95)));
+[v _TRISDbits `VS159 ~T0 @X0 0 e@3989 ]
+"9987
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 9987: extern volatile __bit LATD0 __attribute__((address(0x7C60)));
+[v _LATD0 `Vb ~T0 @X0 0 e@31840 ]
 "9741
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 9741: extern volatile __bit GIE __attribute__((address(0x7F97)));
 [v _GIE `Vb ~T0 @X0 0 e@32663 ]
@@ -647,127 +665,130 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _main ]
 [f ]
 "13
-[; ;main.c: 13:     TRISBbits.RB0 = 1;
-[e = . . _TRISBbits 1 0 -> -> 1 `i `uc ]
+[; ;main.c: 13:     TRISBbits.RB4 = 1;
+[e = . . _TRISBbits 1 4 -> -> 1 `i `uc ]
 "14
-[; ;main.c: 14:     TRISBbits.RB1 = 1;
-[e = . . _TRISBbits 1 1 -> -> 1 `i `uc ]
-"15
-[; ;main.c: 15:     TRISBbits.RB2 = 0;
+[; ;main.c: 14:     TRISBbits.RB2 = 0;
 [e = . . _TRISBbits 1 2 -> -> 0 `i `uc ]
+"15
+[; ;main.c: 15:     TRISDbits.RD0= 0;
+[e = . . _TRISDbits 1 0 -> -> 0 `i `uc ]
 "16
-[; ;main.c: 16:     GIE = 1;
-[e = _GIE -> -> 1 `i `b ]
-"17
-[; ;main.c: 17:     TMR0IE = 1;
-[e = _TMR0IE -> -> 1 `i `b ]
+[; ;main.c: 16:     LATD0 |= 1;
+[e =| _LATD0 -> -> -> 1 `i `b `Vb ]
 "18
-[; ;main.c: 18:     T0CON = 0XC3;
-[e = _T0CON -> -> 195 `i `uc ]
+[; ;main.c: 18:     GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
 "19
-[; ;main.c: 19:     TMR0 = 0X64;
-[e = _TMR0 -> -> 100 `i `us ]
+[; ;main.c: 19:     TMR0IE = 1;
+[e = _TMR0IE -> -> 1 `i `b ]
+"20
+[; ;main.c: 20:     T0CON = 0XC3;
+[e = _T0CON -> -> 195 `i `uc ]
 "21
-[; ;main.c: 21:     while(1)
-[e :U 373 ]
-"22
-[; ;main.c: 22:     {
-{
+[; ;main.c: 21:     TMR0 = 0X64;
+[e = _TMR0 -> -> 100 `i `us ]
 "23
-[; ;main.c: 23:         if(PORTBbits.RB0 && value != 5){
-[e $ ! && != -> . . _PORTBbits 0 0 `i -> 0 `i != _value -> 5 `i 375  ]
-{
+[; ;main.c: 23:     while(1)
+[e :U 373 ]
 "24
-[; ;main.c: 24:             value = 5;
-[e = _value -> 5 `i ]
+[; ;main.c: 24:     {
+{
 "25
-[; ;main.c: 25:         }
+[; ;main.c: 25:         if(PORTBbits.RB4 && value == 5){
+[e $ ! && != -> . . _PORTBbits 0 4 `i -> 0 `i == _value -> 5 `i 375  ]
+{
+"26
+[; ;main.c: 26:             value = 0;
+[e = _value -> 0 `i ]
+"27
+[; ;main.c: 27:         }
 }
 [e $U 376  ]
-"26
-[; ;main.c: 26:         else if(PORTBbits.RB1 && value != 0){
-[e :U 375 ]
-[e $ ! && != -> . . _PORTBbits 0 1 `i -> 0 `i != _value -> 0 `i 377  ]
-{
-"27
-[; ;main.c: 27:             value = 0;
-[e = _value -> 0 `i ]
 "28
-[; ;main.c: 28:         }
+[; ;main.c: 28:         else if(PORTBbits.RB4 && value == 0){
+[e :U 375 ]
+[e $ ! && != -> . . _PORTBbits 0 4 `i -> 0 `i == _value -> 0 `i 377  ]
+{
+"29
+[; ;main.c: 29:             value = 5;
+[e = _value -> 5 `i ]
+"30
+[; ;main.c: 30:         }
 }
 [e :U 377 ]
 [e :U 376 ]
-"29
-[; ;main.c: 29:     }
+"31
+[; ;main.c: 31:     }
 }
 [e :U 372 ]
 [e $U 373  ]
 [e :U 374 ]
-"30
-[; ;main.c: 30: }
+"32
+[; ;main.c: 32: }
 [e :UE 371 ]
 }
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-"32
-[; ;main.c: 32: __attribute__((picinterrupt(("")))) void ISR(void)
+"34
+[; ;main.c: 34: __attribute__((picinterrupt(("")))) void ISR(void)
 [v _ISR `(v ~T36 @X0 1 ef ]
-"33
-[; ;main.c: 33: {
+"35
+[; ;main.c: 35: {
 {
 [e :U _ISR ]
 [f ]
-"34
-[; ;main.c: 34:     if(T0IF)
-[e $ ! _T0IF 379  ]
-"35
-[; ;main.c: 35:     {
-{
 "36
-[; ;main.c: 36:         TMR0IF = 0;
-[e = _TMR0IF -> -> 0 `i `b ]
+[; ;main.c: 36:     if(T0IF)
+[e $ ! _T0IF 379  ]
 "37
-[; ;main.c: 37:         count++;
-[e ++ _count -> 1 `i ]
-"39
-[; ;main.c: 39:         if(count==40)
-[e $ ! == _count -> 40 `i 380  ]
-"40
-[; ;main.c: 40:         {
+[; ;main.c: 37:     {
 {
+"38
+[; ;main.c: 38:         TMR0IF = 0;
+[e = _TMR0IF -> -> 0 `i `b ]
+"39
+[; ;main.c: 39:         count++;
+[e ++ _count -> 1 `i ]
 "41
-[; ;main.c: 41:             count = 0;
-[e = _count -> 0 `i ]
+[; ;main.c: 41:         if(count==40)
+[e $ ! == _count -> 40 `i 380  ]
 "42
-[; ;main.c: 42:             LATBbits.LB2 = 1;
-[e = . . _LATBbits 1 2 -> -> 1 `i `uc ]
+[; ;main.c: 42:         {
+{
 "43
-[; ;main.c: 43:         }
+[; ;main.c: 43:             count = 0;
+[e = _count -> 0 `i ]
+"44
+[; ;main.c: 44:             LATBbits.LB2 = 1;
+[e = . . _LATBbits 1 2 -> -> 1 `i `uc ]
+"45
+[; ;main.c: 45:         }
 }
 [e :U 380 ]
-"44
-[; ;main.c: 44:         if(count==value)
-[e $ ! == _count _value 381  ]
-"45
-[; ;main.c: 45:         {
-{
 "46
-[; ;main.c: 46:             LATBbits.LB2 = 0;
-[e = . . _LATBbits 1 2 -> -> 0 `i `uc ]
+[; ;main.c: 46:         if(count==value)
+[e $ ! == _count _value 381  ]
 "47
-[; ;main.c: 47:         }
+[; ;main.c: 47:         {
+{
+"48
+[; ;main.c: 48:             LATBbits.LB2 = 0;
+[e = . . _LATBbits 1 2 -> -> 0 `i `uc ]
+"49
+[; ;main.c: 49:         }
 }
 [e :U 381 ]
-"48
-[; ;main.c: 48:     TMR0=0x64;
-[e = _TMR0 -> -> 100 `i `us ]
-"49
-[; ;main.c: 49:     T0IF = 0;
-[e = _T0IF -> -> 0 `i `b ]
 "50
-[; ;main.c: 50:   }
+[; ;main.c: 50:     TMR0=0x64;
+[e = _TMR0 -> -> 100 `i `us ]
+"51
+[; ;main.c: 51:     T0IF = 0;
+[e = _T0IF -> -> 0 `i `b ]
+"52
+[; ;main.c: 52:   }
 }
 [e :U 379 ]
-"51
-[; ;main.c: 51: }
+"53
+[; ;main.c: 53: }
 [e :UE 378 ]
 }

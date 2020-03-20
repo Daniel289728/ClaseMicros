@@ -5951,7 +5951,6 @@ void initADC(void){
     ADCON0 = 0b00000001;
 
     ADCON1 = 0b00001110;
-
     ADCON2 = 0b10111100;
 }
 void initLCD(void){
@@ -5970,6 +5969,7 @@ uint16_t conversionADC(void){
 }
 
 void ChecarLEDs(uint16_t res){
+
     LATAbits.LA1 = (res&(1<<9)) == 0 ? 0 : 1;
     LATAbits.LA2 = (res&(1<<8)) == 0 ? 0 : 1;
     LATAbits.LA3 = (res&(1<<7)) == 0 ? 0 : 1;

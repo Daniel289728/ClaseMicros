@@ -5681,9 +5681,18 @@ extern void DelayXLCD(void);
 # 19 "XLCD/openxlcd.c"
 void OpenXLCD(unsigned char lcdtype)
 {
-# 31 "XLCD/openxlcd.c"
-        PORTD &= 0xf0;
-        TRISD &= 0xF0;
+
+
+
+
+
+
+
+        PORTD &= 0x0f;
+        TRISD &= 0x0F;
+
+
+
 
 
         TRISEbits.TRISE1 = 0;

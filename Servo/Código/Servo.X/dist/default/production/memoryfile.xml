@@ -3,9 +3,9 @@
   <executable name="dist/default/production\Servo.X.production.hex">
     <memory name="program">
       <units>bytes</units>
-      <length>32768</length>
-      <used>240</used>
-      <free>32528</free>
+      <length>28672</length>
+      <used>242</used>
+      <free>28430</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

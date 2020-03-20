@@ -5688,18 +5688,18 @@ unsigned char ReadAddrXLCD(void)
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
 
+        data = PORTD&0xf0;
 
 
-        data = (PORTD<<4)&0xf0;
 
         LATEbits.LATE2 = 0;
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
 
+        data |= (PORTD>>4)&0x0f;
 
 
-        data |= PORTD&0x0f;
 
         LATEbits.LATE2 = 0;
         LATEbits.LATE1 = 0;

@@ -546,15 +546,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14
 [; ;XLCD/setddram.c: 14: {
 [f ]
-"32
-[; ;XLCD/setddram.c: 32:         TRISD &= 0xf0;
-[e =& _TRISD -> -> 240 `i `Vuc ]
-"33
-[; ;XLCD/setddram.c: 33:         PORTD &= 0xf0;
-[e =& _PORTD -> -> 240 `i `Vuc ]
-"34
-[; ;XLCD/setddram.c: 34:         PORTD |= (((DDaddr | 0b10000000)>>4) & 0x0f);
-[e =| _PORTD -> & >> | -> _DDaddr `i -> 128 `i -> 4 `i -> 15 `i `Vuc ]
+"28
+[; ;XLCD/setddram.c: 28:         TRISD &= 0x0f;
+[e =& _TRISD -> -> 15 `i `Vuc ]
+"29
+[; ;XLCD/setddram.c: 29:         PORTD &= 0x0f;
+[e =& _PORTD -> -> 15 `i `Vuc ]
+"30
+[; ;XLCD/setddram.c: 30:         PORTD |= ((DDaddr | 0b10000000) & 0xf0);
+[e =| _PORTD -> & | -> _DDaddr `i -> 128 `i -> 240 `i `Vuc ]
 "36
 [; ;XLCD/setddram.c: 36:         LATEbits.LATE1 = 0;
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
@@ -573,12 +573,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "41
 [; ;XLCD/setddram.c: 41:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"46
-[; ;XLCD/setddram.c: 46:         PORTD &= 0xf0;
-[e =& _PORTD -> -> 240 `i `Vuc ]
-"47
-[; ;XLCD/setddram.c: 47:         PORTD |= (DDaddr&0x0f);
-[e =| _PORTD -> & -> _DDaddr `i -> 15 `i `Vuc ]
+"43
+[; ;XLCD/setddram.c: 43:         PORTD &= 0x0f;
+[e =& _PORTD -> -> 15 `i `Vuc ]
+"44
+[; ;XLCD/setddram.c: 44:         PORTD |= ((DDaddr<<4)&0xf0);
+[e =| _PORTD -> & << -> _DDaddr `i -> 4 `i -> 240 `i `Vuc ]
 "49
 [; ;XLCD/setddram.c: 49:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
@@ -591,9 +591,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "52
 [; ;XLCD/setddram.c: 52:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
-"56
-[; ;XLCD/setddram.c: 56:         TRISD |= 0x0f;
-[e =| _TRISD -> -> 15 `i `Vuc ]
+"54
+[; ;XLCD/setddram.c: 54:         TRISD |= 0xf0;
+[e =| _TRISD -> -> 240 `i `Vuc ]
 "59
 [; ;XLCD/setddram.c: 59:         return;
 [e $UE 367  ]

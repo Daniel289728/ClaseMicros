@@ -5685,8 +5685,10 @@ unsigned char BusyXLCD(void)
         DelayFor18TCY();
         LATEbits.LATE2 = 1;
         DelayFor18TCY();
-# 35 "XLCD/busyxlcd.c"
-        if(PORTD&0x08)
+# 33 "XLCD/busyxlcd.c"
+        if(PORTD&0x80)
+
+
 
         {
                 LATEbits.LATE2 = 0;

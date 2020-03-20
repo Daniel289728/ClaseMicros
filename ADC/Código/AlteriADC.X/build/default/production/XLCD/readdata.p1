@@ -556,9 +556,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35
 [; ;XLCD/readdata.c: 35:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
-"39
-[; ;XLCD/readdata.c: 39:         data = (PORTD<<4)&0xf0;
-[e = _data -> & << -> _PORTD `i -> 4 `i -> 240 `i `uc ]
+"37
+[; ;XLCD/readdata.c: 37:         data = PORTD&0xf0;
+[e = _data -> & -> _PORTD `i -> 240 `i `uc ]
 "41
 [; ;XLCD/readdata.c: 41:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
@@ -571,9 +571,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;XLCD/readdata.c: 44:         DelayFor18TCY();
 [e ( _DelayFor18TCY ..  ]
-"48
-[; ;XLCD/readdata.c: 48:         data |= PORTD&0x0f;
-[e =| _data -> & -> _PORTD `i -> 15 `i `uc ]
+"46
+[; ;XLCD/readdata.c: 46:         data |= (PORTD>>4)&0x0f;
+[e =| _data -> & >> -> _PORTD `i -> 4 `i -> 15 `i `uc ]
 "50
 [; ;XLCD/readdata.c: 50:         LATEbits.LATE2 = 0;
 [e = . . _LATEbits 0 2 -> -> 0 `i `uc ]
