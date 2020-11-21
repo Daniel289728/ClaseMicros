@@ -5630,7 +5630,216 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-# 4 "main.c"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\__size_t.h"
+typedef unsigned size_t;
+
+# 7 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdarg.h"
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+
+# 43 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdio.h"
+struct __prbuf
+{
+char * ptr;
+void (* func)(char);
+};
+
+# 29 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\errno.h"
+extern int errno;
+
+# 12 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\conio.h"
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+# 23
+extern char * cgets(char *);
+extern void cputs(const char *);
+
+# 88 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdio.h"
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+
+
+# 180
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+
+# 13 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\stdint.h"
+typedef signed char int8_t;
+
+# 20
+typedef signed int int16_t;
+
+# 28
+typedef __int24 int24_t;
+
+# 36
+typedef signed long int int32_t;
+
+# 52
+typedef unsigned char uint8_t;
+
+# 58
+typedef unsigned int uint16_t;
+
+# 65
+typedef __uint24 uint24_t;
+
+# 72
+typedef unsigned long int uint32_t;
+
+# 88
+typedef signed char int_least8_t;
+
+# 96
+typedef signed int int_least16_t;
+
+# 109
+typedef __int24 int_least24_t;
+
+# 118
+typedef signed long int int_least32_t;
+
+# 136
+typedef unsigned char uint_least8_t;
+
+# 143
+typedef unsigned int uint_least16_t;
+
+# 154
+typedef __uint24 uint_least24_t;
+
+# 162
+typedef unsigned long int uint_least32_t;
+
+# 181
+typedef signed char int_fast8_t;
+
+# 188
+typedef signed int int_fast16_t;
+
+# 200
+typedef __int24 int_fast24_t;
+
+# 208
+typedef signed long int int_fast32_t;
+
+# 224
+typedef unsigned char uint_fast8_t;
+
+# 230
+typedef unsigned int uint_fast16_t;
+
+# 240
+typedef __uint24 uint_fast24_t;
+
+# 247
+typedef unsigned long int uint_fast32_t;
+
+# 268
+typedef int32_t intmax_t;
+
+# 282
+typedef uint32_t uintmax_t;
+
+# 289
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+
+# 30 "C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c90\math.h"
+extern double fabs(double);
+extern double floor(double);
+extern double ceil(double);
+extern double modf(double, double *);
+extern double sqrt(double);
+extern double atof(const char *);
+extern double sin(double) ;
+extern double cos(double) ;
+extern double tan(double) ;
+extern double asin(double) ;
+extern double acos(double) ;
+extern double atan(double);
+extern double atan2(double, double) ;
+extern double log(double);
+extern double log10(double);
+extern double pow(double, double) ;
+extern double exp(double) ;
+extern double sinh(double) ;
+extern double cosh(double) ;
+extern double tanh(double);
+extern double eval_poly(double, const double *, int);
+extern double frexp(double, int *);
+extern double ldexp(double, int);
+extern double fmod(double, double);
+extern double trunc(double);
+extern double round(double);
+
+# 8 "main.c"
+char strResultado[5];
+
+void initADC(void);
+void inicializacionLCD(void);
+uint16_t conversionADC(void);
+
+void main (void)
+{
+double Dis, Vadc;
+uint16_t Radc;
+uint32_t DisI;
+inicializacionLCD();
+putrsXLCD("    Distancia:");
+initADC();
+
+while(1){
+Radc = (conversionADC());
+Vadc = (float)(Radc);
+Vadc = (Vadc*2.5)/1024;
+
+
+
+
+Dis = (-22.14*Vadc*Vadc*Vadc*Vadc*Vadc) + (171.6*Vadc*Vadc*Vadc*Vadc) - (523.0*Vadc*Vadc*Vadc) + (793.5*Vadc*Vadc) - (625.0*Vadc) + 232.9;
+sprintf(strResultado,"%.3f cm",Dis);
+WriteCmdXLCD(0b11000000 + 3);
+putsXLCD(strResultado);
+delay_ms(200);
+}
+while(1);
+}
+
 void inicializacionLCD(void)
 {
 OpenXLCD(0b00101100 & 0b00111000);
@@ -5638,15 +5847,22 @@ WriteCmdXLCD(0b00000110);
 WriteCmdXLCD(0b00001111);
 WriteCmdXLCD(0b00001110);
 }
-void main (void)
-{
-inicializacionLCD();
-putrsXLCD("   HOLA MUNDO");
-WriteCmdXLCD(0b11000000);
-putrsXLCD("  ADIOS MUNDO");
+void initADC(void){
+ADCON0 = 0b00000001;
 
-while(1);
+ADCON1 = 0b00011110;
+ADCON2 = 0b10111100;
 }
+
+uint16_t conversionADC(void){
+unsigned int resultado;
+ADCON0bits.GO_DONE = 1;
+while (ADCON0bits.GO_DONE == 1);
+resultado = (ADRESH<<8) + ADRESL;
+return resultado;
+}
+
+
 void DelayFor18TCY(void){
 _delay(240);
 }

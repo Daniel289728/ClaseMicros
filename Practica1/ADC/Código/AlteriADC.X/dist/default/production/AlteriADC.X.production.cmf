@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\danie\AppData\Local\Temp\s9vg.o
+$C:\Users\danie\AppData\Local\Temp\sco8.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 1000 1000 4 1
 config CONFIG 0 300000 300000 E 1
@@ -90,173 +90,173 @@ MEDIUMCONST 101C-6EB9 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\AlteriADC.X.production.o
-77CC text30 CODE >56:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-77CC text30 CODE >58:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-77EC text30 CODE >59:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-780E text30 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7832 text30 CODE >61:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7852 text30 CODE >62:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7874 text30 CODE >63:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7892 text30 CODE >64:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-78B2 text30 CODE >65:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-78D4 text30 CODE >66:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-78F8 text30 CODE >67:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7918 text30 CODE >68:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F5C text29 CODE >48:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F5C text29 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F5E text29 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F6C text29 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F7E text29 CODE >53:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F86 text29 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EC4 text28 CODE >35:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EC4 text28 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EC8 text28 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6ECC text28 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6ED0 text28 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EBC text27 CODE >70:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EBC text27 CODE >71:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EC2 text27 CODE >72:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-717C text26 CODE >11:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-717C text26 CODE >13:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-717E text26 CODE >14:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-7180 text26 CODE >15:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-7184 text26 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-7186 text26 CODE >17:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-718A text26 CODE >33:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-7198 text26 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-719A text26 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-719E text26 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71A0 text26 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71A4 text26 CODE >42:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71A6 text26 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71A8 text26 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71AE text26 CODE >46:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71AE text26 CODE >48:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71B0 text26 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71B4 text26 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71B6 text26 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71BA text26 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71BC text26 CODE >53:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71BE text26 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-71C0 text26 CODE >57:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
-70B2 text25 CODE >157:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código/AlteriADC.X/Alteri.h
-70B2 text25 CODE >159:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código/AlteriADC.X/Alteri.h
-70B6 text25 CODE >160:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código/AlteriADC.X/Alteri.h
-70C6 text25 CODE >159:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código/AlteriADC.X/Alteri.h
-70F2 text25 CODE >162:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código/AlteriADC.X/Alteri.h
-6EE4 text24 CODE >73:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EE4 text24 CODE >74:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EF8 text24 CODE >75:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7072 text23 CODE >13:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7074 text23 CODE >28:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7078 text23 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-707C text23 CODE >30:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7084 text23 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7086 text23 CODE >37:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7088 text23 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-708C text23 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-708E text23 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7092 text23 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7094 text23 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-7098 text23 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-70A0 text23 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-70A4 text23 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-70A6 text23 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-70AA text23 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-70AC text23 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-70B0 text23 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/setddram.c
-6FF6 text22 CODE >13:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-6FF8 text22 CODE >28:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-6FFC text22 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7000 text22 CODE >30:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7006 text22 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7008 text22 CODE >37:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-700A text22 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-700E text22 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7010 text22 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7014 text22 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7016 text22 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-701A text22 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7022 text22 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7026 text22 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7028 text22 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-702C text22 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-702E text22 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-7032 text22 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
-76D0 text21 CODE >19:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76D2 text21 CODE >28:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76D6 text21 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76DA text21 CODE >35:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76DC text21 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76DE text21 CODE >37:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76E0 text21 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76E2 text21 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76E4 text21 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76E6 text21 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76EA text21 CODE >45:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-76F0 text21 CODE >47:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7700 text21 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7706 text21 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7714 text21 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-771A text21 CODE >55:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-772E text21 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7742 text21 CODE >61:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7748 text21 CODE >64:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-775C text21 CODE >65:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7762 text21 CODE >66:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7776 text21 CODE >67:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-777C text21 CODE >70:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7790 text21 CODE >71:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7796 text21 CODE >74:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-77AA text21 CODE >75:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-77B0 text21 CODE >78:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-77C4 text21 CODE >79:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-77CA text21 CODE >82:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
-7034 text20 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7036 text20 CODE >31:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-703A text20 CODE >32:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-703E text20 CODE >33:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7044 text20 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7046 text20 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7048 text20 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-704C text20 CODE >42:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-704E text20 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7052 text20 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7054 text20 CODE >46:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7058 text20 CODE >47:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7060 text20 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7064 text20 CODE >53:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7066 text20 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-706A text20 CODE >55:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-706C text20 CODE >57:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-7070 text20 CODE >63:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/writdata.c
-71C2 text19 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
-71C2 text19 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
-71C6 text19 CODE >20:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
-71DA text19 CODE >21:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
-71EA text19 CODE >22:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
-71EE text19 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
-720A text19 CODE >25:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
-6F10 text18 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F10 text18 CODE >42:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F16 text18 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F1C text18 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F22 text18 CODE >45:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F28 text18 CODE >46:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6F34 text18 CODE >47:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6ED2 text17 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6ED2 text17 CODE >30:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6ED6 text17 CODE >31:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EDA text17 CODE >32:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EDE text17 CODE >33:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EE2 text17 CODE >34:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-70F4 text16 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
-70F4 text16 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
-70F8 text16 CODE >20:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
-710C text16 CODE >21:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
-711A text16 CODE >22:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
-711E text16 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
-7136 text16 CODE >25:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
+77CC text30 CODE >56:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+77CC text30 CODE >58:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+77EC text30 CODE >59:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+780E text30 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7832 text30 CODE >61:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7852 text30 CODE >62:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7874 text30 CODE >63:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7892 text30 CODE >64:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+78B2 text30 CODE >65:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+78D4 text30 CODE >66:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+78F8 text30 CODE >67:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7918 text30 CODE >68:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F5C text29 CODE >48:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F5C text29 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F5E text29 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F6C text29 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F7E text29 CODE >53:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F86 text29 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EC4 text28 CODE >35:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EC4 text28 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EC8 text28 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6ECC text28 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6ED0 text28 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EBC text27 CODE >70:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EBC text27 CODE >71:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EC2 text27 CODE >72:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+717C text26 CODE >11:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+717C text26 CODE >13:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+717E text26 CODE >14:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+7180 text26 CODE >15:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+7184 text26 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+7186 text26 CODE >17:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+718A text26 CODE >33:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+7198 text26 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+719A text26 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+719E text26 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71A0 text26 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71A4 text26 CODE >42:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71A6 text26 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71A8 text26 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71AE text26 CODE >46:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71AE text26 CODE >48:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71B0 text26 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71B4 text26 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71B6 text26 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71BA text26 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71BC text26 CODE >53:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71BE text26 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+71C0 text26 CODE >57:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/busyxlcd.c
+70B2 text25 CODE >157:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código/AlteriADC.X/Alteri.h
+70B2 text25 CODE >159:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código/AlteriADC.X/Alteri.h
+70B6 text25 CODE >160:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código/AlteriADC.X/Alteri.h
+70C6 text25 CODE >159:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código/AlteriADC.X/Alteri.h
+70F2 text25 CODE >162:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código/AlteriADC.X/Alteri.h
+6EE4 text24 CODE >73:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EE4 text24 CODE >74:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EF8 text24 CODE >75:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7072 text23 CODE >13:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7074 text23 CODE >28:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7078 text23 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+707C text23 CODE >30:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7084 text23 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7086 text23 CODE >37:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7088 text23 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+708C text23 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+708E text23 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7092 text23 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7094 text23 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+7098 text23 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+70A0 text23 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+70A4 text23 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+70A6 text23 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+70AA text23 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+70AC text23 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+70B0 text23 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/setddram.c
+6FF6 text22 CODE >13:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+6FF8 text22 CODE >28:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+6FFC text22 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7000 text22 CODE >30:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7006 text22 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7008 text22 CODE >37:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+700A text22 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+700E text22 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7010 text22 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7014 text22 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7016 text22 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+701A text22 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7022 text22 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7026 text22 CODE >50:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7028 text22 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+702C text22 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+702E text22 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+7032 text22 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/wcmdxlcd.c
+76D0 text21 CODE >19:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76D2 text21 CODE >28:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76D6 text21 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76DA text21 CODE >35:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76DC text21 CODE >36:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76DE text21 CODE >37:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76E0 text21 CODE >38:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76E2 text21 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76E4 text21 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76E6 text21 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76EA text21 CODE >45:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+76F0 text21 CODE >47:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7700 text21 CODE >49:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7706 text21 CODE >51:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7714 text21 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+771A text21 CODE >55:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+772E text21 CODE >60:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7742 text21 CODE >61:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7748 text21 CODE >64:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+775C text21 CODE >65:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7762 text21 CODE >66:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7776 text21 CODE >67:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+777C text21 CODE >70:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7790 text21 CODE >71:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7796 text21 CODE >74:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+77AA text21 CODE >75:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+77B0 text21 CODE >78:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+77C4 text21 CODE >79:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+77CA text21 CODE >82:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/openxlcd.c
+7034 text20 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7036 text20 CODE >31:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+703A text20 CODE >32:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+703E text20 CODE >33:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7044 text20 CODE >39:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7046 text20 CODE >40:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7048 text20 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+704C text20 CODE >42:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+704E text20 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7052 text20 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7054 text20 CODE >46:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7058 text20 CODE >47:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7060 text20 CODE >52:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7064 text20 CODE >53:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7066 text20 CODE >54:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+706A text20 CODE >55:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+706C text20 CODE >57:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+7070 text20 CODE >63:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/writdata.c
+71C2 text19 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
+71C2 text19 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
+71C6 text19 CODE >20:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
+71DA text19 CODE >21:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
+71EA text19 CODE >22:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
+71EE text19 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
+720A text19 CODE >25:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putrxlcd.c
+6F10 text18 CODE >41:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F10 text18 CODE >42:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F16 text18 CODE >43:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F1C text18 CODE >44:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F22 text18 CODE >45:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F28 text18 CODE >46:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6F34 text18 CODE >47:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6ED2 text17 CODE >29:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6ED2 text17 CODE >30:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6ED6 text17 CODE >31:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EDA text17 CODE >32:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EDE text17 CODE >33:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EE2 text17 CODE >34:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+70F4 text16 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
+70F4 text16 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
+70F8 text16 CODE >20:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
+710C text16 CODE >21:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
+711A text16 CODE >22:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
+711E text16 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
+7136 text16 CODE >25:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\XLCD/putsxlcd.c
 6F36 text15 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
 6F36 text15 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
 6F42 text15 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
@@ -423,30 +423,30 @@ $dist/default/production\AlteriADC.X.production.o
 7280 text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
 729C text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
 72AE text1 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-7312 text0 CODE >15:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7312 text0 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7316 text0 CODE >17:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-731A text0 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-731E text0 CODE >20:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-732A text0 CODE >21:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7346 text0 CODE >22:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-734C text0 CODE >23:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7358 text0 CODE >24:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-7364 text0 CODE >25:C:\Users\danie\Documents\GitHub\ClaseMicros\ADC\Código\AlteriADC.X\main.c
-6EFA cinit CODE >4019:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6EFA cinit CODE >4021:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6EFA cinit CODE >4024:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6EFA cinit CODE >4046:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6EFE cinit CODE >4047:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F00 cinit CODE >4048:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F00 cinit CODE >4049:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F02 cinit CODE >4050:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F04 cinit CODE >4051:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F06 cinit CODE >4057:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F06 cinit CODE >4060:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F08 cinit CODE >4061:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F0A cinit CODE >4062:C:\Users\danie\AppData\Local\Temp\s9vg.s
-6F0C cinit CODE >4063:C:\Users\danie\AppData\Local\Temp\s9vg.s
+7312 text0 CODE >15:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7312 text0 CODE >16:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7316 text0 CODE >17:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+731A text0 CODE >18:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+731E text0 CODE >20:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+732A text0 CODE >21:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7346 text0 CODE >22:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+734C text0 CODE >23:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7358 text0 CODE >24:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+7364 text0 CODE >25:C:\Users\danie\Documents\GitHub\ClaseMicros\Practica1\ADC\Código\AlteriADC.X\main.c
+6EFA cinit CODE >4019:C:\Users\danie\AppData\Local\Temp\sco8.s
+6EFA cinit CODE >4021:C:\Users\danie\AppData\Local\Temp\sco8.s
+6EFA cinit CODE >4024:C:\Users\danie\AppData\Local\Temp\sco8.s
+6EFA cinit CODE >4046:C:\Users\danie\AppData\Local\Temp\sco8.s
+6EFE cinit CODE >4047:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F00 cinit CODE >4048:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F00 cinit CODE >4049:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F02 cinit CODE >4050:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F04 cinit CODE >4051:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F06 cinit CODE >4057:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F06 cinit CODE >4060:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F08 cinit CODE >4061:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F0A cinit CODE >4062:C:\Users\danie\AppData\Local\Temp\sco8.s
+6F0C cinit CODE >4063:C:\Users\danie\AppData\Local\Temp\sco8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -466,7 +466,7 @@ __Hspace_1 99 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\AlteriADC.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\danie\AppData\Local\Temp\s9vg.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\danie\AppData\Local\Temp\sco8.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AlteriADC.X.production.o
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __CFG_VREGEN$ON 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
@@ -476,7 +476,7 @@ __size_of_conversionADC 0 0 ABS 0 - dist/default/production\AlteriADC.X.producti
 __Lsmallconst 1004 0 SMALLCONST 0 smallconst dist/default/production\AlteriADC.X.production.o
 _LATA F89 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 _LATB F8A 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\danie\AppData\Local\Temp\s9vg.o
+___sp 0 0 STACK 2 stack C:\Users\danie\AppData\Local\Temp\sco8.o
 _atoi 791A 0 CODE 0 text12 dist/default/production\AlteriADC.X.production.o
 _dbuf 68 0 BANK0 1 bssBANK0 dist/default/production\AlteriADC.X.production.o
 _main 7312 0 CODE 0 text0 dist/default/production\AlteriADC.X.production.o
@@ -486,7 +486,7 @@ _utoa 7AAA 0 CODE 0 text4 dist/default/production\AlteriADC.X.production.o
 pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\AlteriADC.X.production.o
 pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production\AlteriADC.X.production.o
 pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\AlteriADC.X.production.o
-start 1000 0 CODE 0 init C:\Users\danie\AppData\Local\Temp\s9vg.o
+start 1000 0 CODE 0 init C:\Users\danie\AppData\Local\Temp\sco8.o
 __size_of_atoi 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __size_of_utoa 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
@@ -506,11 +506,11 @@ utoa@n 32 0 COMRAM 1 cstackCOMRAM dist/default/production\AlteriADC.X.production
 utoa@p 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\AlteriADC.X.production.o
 utoa@w 30 0 COMRAM 1 cstackCOMRAM dist/default/production\AlteriADC.X.production.o
 __end_of_conversionADC 6F88 0 CODE 0 text29 dist/default/production\AlteriADC.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\danie\AppData\Local\Temp\s9vg.o
-intlevel0 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\s9vg.o
-intlevel1 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\s9vg.o
-intlevel2 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\s9vg.o
-intlevel3 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\s9vg.o
+__accesstop 60 0 ABS 0 - C:\Users\danie\AppData\Local\Temp\sco8.o
+intlevel0 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\sco8.o
+intlevel1 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\sco8.o
+intlevel2 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\sco8.o
+intlevel3 0 0 CODE 0 text C:\Users\danie\AppData\Local\Temp\sco8.o
 __CFG_USBDIV$2 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\AlteriADC.X.production.o
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
@@ -526,8 +526,8 @@ _ADCON2 FC0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 _ADRESH FC4 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 _ADRESL FC3 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 _vfpfcnvrt$523 50 0 COMRAM 1 cstackCOMRAM dist/default/production\AlteriADC.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\danie\AppData\Local\Temp\s9vg.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\danie\AppData\Local\Temp\s9vg.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\danie\AppData\Local\Temp\sco8.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\danie\AppData\Local\Temp\sco8.o
 __size_of_initADC 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __size_of_initLCD 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 __size_of_initLED 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
@@ -598,7 +598,7 @@ __Htext8 0 0 ABS 0 text8 dist/default/production\AlteriADC.X.production.o
 __Htext9 0 0 ABS 0 text9 dist/default/production\AlteriADC.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\AlteriADC.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\AlteriADC.X.production.o
-__smallconst 1004 0 SMALLCONST 0 smallconst C:\Users\danie\AppData\Local\Temp\s9vg.o
+__smallconst 1004 0 SMALLCONST 0 smallconst C:\Users\danie\AppData\Local\Temp\sco8.o
 __end_of_sprintf 72B0 0 CODE 0 text1 dist/default/production\AlteriADC.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\AlteriADC.X.production.o
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\AlteriADC.X.production.o
@@ -757,8 +757,8 @@ __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\AlteriADC.X.production.o
 _strlen 6F88 0 CODE 0 text6 dist/default/production\AlteriADC.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\AlteriADC.X.production.o
 __size_of_vfprintf 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
-stackhi 7FF 0 ABS 0 - C:\Users\danie\AppData\Local\Temp\s9vg.o
-stacklo 99 0 ABS 0 - C:\Users\danie\AppData\Local\Temp\s9vg.o
+stackhi 7FF 0 ABS 0 - C:\Users\danie\AppData\Local\Temp\sco8.o
+stacklo 99 0 ABS 0 - C:\Users\danie\AppData\Local\Temp\sco8.o
 __Lintcode 1000 0 CODE 0 intcode dist/default/production\AlteriADC.X.production.o
 __size_of_putsXLCD 0 0 ABS 0 - dist/default/production\AlteriADC.X.production.o
 _ChecarLEDs 77CC 0 CODE 0 text30 dist/default/production\AlteriADC.X.production.o
@@ -836,7 +836,7 @@ __Ltext27 0 0 ABS 0 text27 dist/default/production\AlteriADC.X.production.o
 __Ltext28 0 0 ABS 0 text28 dist/default/production\AlteriADC.X.production.o
 __Ltext29 0 0 ABS 0 text29 dist/default/production\AlteriADC.X.production.o
 __Ltext30 0 0 ABS 0 text30 dist/default/production\AlteriADC.X.production.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\danie\AppData\Local\Temp\s9vg.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\danie\AppData\Local\Temp\sco8.o
 _sprintf 725E 0 CODE 0 text1 dist/default/production\AlteriADC.X.production.o
 _vfprintf 72B0 0 CODE 0 text2 dist/default/production\AlteriADC.X.production.o
 __Lpowerup 1000 0 CODE 0 powerup dist/default/production\AlteriADC.X.production.o
